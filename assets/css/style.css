@@ -1,0 +1,140 @@
+:root{
+    --color-red: #FC3314;
+    --color-pink: #FFD4D0;
+    --color-dark: #1F1F1F;
+    --color-dark-grey: #8D8D8D;
+    --color-medium-grey: #E1E1E1;
+    --color-grey: #F7F7F7;
+
+}
+
+.red{
+    color: var(--color-red);
+
+}
+.red-bg{
+    background-color: var(--color-red);
+}
+.pink-bg{
+    background-color: var(--color-pink);
+}
+.pink{
+    color: var(--color-pink);
+}
+.dark-bg{
+    background-color: var(--color-dark);
+}
+.dark{
+    color: var(--color-dark);
+}
+.medium-gray-bg{
+    background-color: var(--color-medium-grey);
+}
+.gray-bg{
+    background-color: var(--color-grey);
+}
+.bold{
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+.regular{
+    font-family: 'Montserrat';
+    font-weight: normal; 
+}
+.heading-1{
+    font-size: 64px;
+    font-weight: bold;
+}
+.heading-2{
+    font-size: 48px;
+    font-weight: bold;
+}
+.heading-3{
+    font-size: 36px;
+    font-weight: bold;
+}
+.xlarge-bold{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 150%;
+}
+.xlarge-regular{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 150%;
+}
+.large-bold{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 150%;
+}
+.large-regular{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 150%;
+}
+.medium-bold{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 150%;
+}
+.medium-regular{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 150%;
+}
+.small-b{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 150%;
+}
+.small-r{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 150%;
+}
+.small-bold{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 150%;
+}
+.small-regular{
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 150%;
+}
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+
+}
+.nav-menu ul li{
+ padding: 0 12px;
+}
+.nav-menu ul li a{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 130%;
+}
+.slick-arrow {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    margin-top: -13px;
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    }   
+.slick-arrow span{
+    width: 40px;
+} 
+    
+.slick-arrow.right-arrow {
+    left: auto;
+    right: -30px;
+}
