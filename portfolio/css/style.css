@@ -1052,6 +1052,10 @@ footer ul li a:hover {
     .about_box {
         flex-direction: column;
     }
+    .about_box .about_img {
+        margin-right: 0;
+        
+    }
 
     .services_box .big_box {
 
