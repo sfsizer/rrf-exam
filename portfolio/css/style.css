@@ -874,11 +874,11 @@ footer ul li a:hover {
 
         font-weight: 450;
     }
-    section{
-        padding-top: 0;
-    }
     .btn {
         padding: 0.3rem 1.2rem;
+    }
+    .about{
+        padding-top: 0;
     }
 
     /*Navbar open*/
@@ -1043,16 +1043,15 @@ footer ul li a:hover {
     .hero_right .typing {
         font-size: 1rem;
     }
-    section{
-        padding-top: 0;
-    }
 
     .btn {
         font-size: 0.5rem;
         padding: 0.3rem 0.2rem;
         margin-bottom: 1rem;
     }
-
+    .about{
+        padding-top: 0;
+    }
     .about_box {
         flex-direction: column;
     }
