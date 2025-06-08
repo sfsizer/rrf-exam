@@ -843,9 +843,15 @@ footer ul li a:hover {
     h4 {
         font-size: 1.2rem;
     }
+    .hero{
+        top: 0;
+    }
     .hero_box{
         display: block;
         text-align: center;
+    }
+    .hero_img{
+        margin-top: 0;
     }
     .hero_img img {
         max-width: 20rem;
@@ -1003,13 +1009,15 @@ footer ul li a:hover {
         right: 3.2%;
     }
 
-    .hero_img {
-        margin-left: 2rem;
+    .hero{
+        top: 0;
     }
-
     .hero_box{
         display: block;
         text-align: center;
+    }
+    .hero_img{
+        margin-top: 0;
     }
     .hero_img img {
         max-width: 15rem;
