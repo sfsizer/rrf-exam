@@ -1,12 +1,12 @@
 // Typing Script JS
 var typed = new Typed(".typing", {
-    strings: ["Web Developer", "Youtuber", "Blogger", "Web Designer"],
+    strings: ["Web Developer", "Wordpress Developer", "Blogger", "Web Designer"],
     typeSpeed: 80,
     backSpeed: 80,
 });
 
 var typed = new Typed(".typing2", {
-    strings: ["Web Designer", "Youtuber", "Frelancer", "Web Developer"],
+    strings: ["Web Designer", "Wordpress Developer", "Frelancer", "Web Developer"],
     typeSpeed: 30,
     backSpeed: 80,
 });

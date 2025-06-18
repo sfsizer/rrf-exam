@@ -11,7 +11,7 @@
 
     --Container-lg: 80%;
     --Container-md: 90%;
-    --Container-sm: 94%;
+    --Container-sm: 98%;
 
 }
 
@@ -174,6 +174,7 @@ nav button {
     gap: 3rem;
 }
 
+
 .nav_menu a {
     font-size: 1rem;
 }
@@ -198,6 +199,7 @@ nav button {
 .hero_box {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: relative;
 }
 
@@ -247,7 +249,7 @@ nav button {
     width: 100%;
     height: 5rem;
     bottom: 0;
-    margin-bottom: -3.1rem;
+    margin-bottom: -4.1rem;
     z-index: 99;
     transform: skewY(-2deg);
     transform-origin: left;
@@ -272,6 +274,7 @@ nav button {
     justify-content: center;
     position: relative;
     margin-bottom: 2.5rem;
+    padding: 0 1.87rem;
 }
 
 .about_box .about_img {
@@ -287,7 +290,7 @@ nav button {
 }
 
 .about_box .about_text {
-    max-width: 70%;
+    max-width: 95%;
     text-align: justify;
     line-height: 1.5rem;
     letter-spacing: 0.5px;
@@ -314,6 +317,9 @@ nav button {
     text-align: center;
     margin-top: -5rem;
 }
+.services_box{
+    margin-top: 2rem;
+}
 
 .services_box .big_box {
     display: grid;
@@ -321,7 +327,8 @@ nav button {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3rem;
-    row-gap: 30px;
+    row-gap: 50px;
+    column-gap: 30px;
 }
 
 .services_box .big_box .box1 {
@@ -330,6 +337,11 @@ nav button {
     margin: 0 1.5rem;
     cursor: pointer;
     position: relative;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .box2 i {
@@ -341,6 +353,7 @@ nav button {
     border-radius: 50%;
     padding: 14px;
     transition: all 1s;
+    
 }
 
 .box2 h3 {
@@ -351,6 +364,7 @@ nav button {
 .box2 p {
     margin: 1.2rem 0;
     color: var(--bg);
+    margin-bottom: auto;
 }
 
 .box2 a {
@@ -463,23 +477,23 @@ nav button {
 }
 
 .dash .line.html span {
-    width: 90%;
+    width: 95%;
 }
 
 .dash .line.css span {
-    width: 70%;
+    width: 95%;
 }
 
-.dash .line.jquery span {
+.dash .line.tailwind span {
     width: 85%;
 }
 
-.dash .line.python span {
-    width: 60%;
+.dash .line.jquery span {
+    width: 40%;
 }
 
-.dash .line.mysql span {
-    width: 75%;
+.dash .line.wordpress span {
+    width: 40%;
 }
 
 .line span::before {
@@ -519,23 +533,23 @@ nav button {
 }
 
 .dash .line.html span::after {
-    content: "90%";
+    content: "95%";
 }
 
 .dash .line.css span::after {
-    content: "70%";
+    content: "95%";
 }
 
-.dash .line.jquery span::after {
+.dash .line.tailwind span::after {
     content: "85%";
 }
 
-.dash .line.python span::after {
-    content: "60%";
+.dash .line.jquery span::after {
+    content: "40%";
 }
 
-.dash .line.mysql span::after {
-    content: "75%";
+.dash .line.wordpress span::after {
+    content: "40%";
 }
 
 
@@ -544,6 +558,7 @@ nav button {
 .portfolio_box {
     text-align: center;
     margin-top: 3rem;
+    padding:  1.8rem;
 }
 
 .gallery {
@@ -553,6 +568,7 @@ nav button {
     margin: 0 auto;
     background-color: var(--black);
     border-radius: 2rem;
+    padding: 1rem 0;
 
 }
 
@@ -563,6 +579,7 @@ nav button {
     border-radius: 0.3rem;
     overflow: hidden;
     box-shadow: 0 3px 5px var(--main);
+    position: relative;
 }
 
 .gallery a img {
@@ -571,20 +588,30 @@ nav button {
     object-fit: cover;
 }
 
-.gallery a img:hover {
+.gallery a h4{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    color: var(--main);
+    font-size: 2rem;
+}
+
+.gallery a img:hover{
     transform: scale(1.4);
+    transition: 0.3s ease-in-out;
+
 }
 
 
-/* Courses*/
+/* blog*/
 
-.courses {
+.blog {
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 5rem;
 }
 
-.courses_box {
+.blog_box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -622,6 +649,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
+    justify-self: space-between;
 }
 
 .footer_box>div h4 {
@@ -809,7 +837,7 @@ footer ul li a:hover {
         box-shadow: 0 3px 5px var(--main);
     }
 
-    .courses_box {
+    .blog_box {
         grid-template-columns: repeat(2, 1fr);
         overflow: hidden;
     }
@@ -987,7 +1015,7 @@ footer ul li a:hover {
         box-shadow: 0 3px 5px var(--main);
     }
 
-    .courses_box {
+    .blog_box {
         grid-template-columns: repeat(2, 1fr);
         overflow: hidden;
     }
@@ -1054,11 +1082,13 @@ footer ul li a:hover {
     }
     .about_box {
         flex-direction: column;
+        padding: 0 .625rem;
     }
     .about_box .about_img {
         margin-right: 0;
         
     }
+
 
     .services_box .big_box {
 
@@ -1071,24 +1101,31 @@ footer ul li a:hover {
 
     .services_box .big_box .box1 {
         padding: 3rem 1rem;
-        margin: 1rem 1rem;
+        margin: 1rem 0.625rem;
     }
 
     .services_box .big_box .box1:hover::after {
         transform: rotate(4deg);
 
     }
+    .skills{
+        padding: 0 0.625rem;
+    }
 
     .gallery a {
         width: 24.8rem;
     }
-
-    .courses_box {
-        grid-template-columns: 1fr;
-        width: 80%;
+    .portfolio_box{
+        padding: 0 0.625rem;
     }
 
-    .courses_box .course {
+    .blog_box {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0 0.625rem;
+    }
+
+    .blog_box .course {
         margin-bottom: 1rem;
     }
 
