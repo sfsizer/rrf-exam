@@ -153,3 +153,33 @@
 .slide-out{
     animation: slideRightToLeft 0.5s ease-out reverse forwards;
 }
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-dark);
+  opacity: 80%;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.card-p:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  color: var(--color-theme);
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
