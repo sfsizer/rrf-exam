@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <!-- type js load -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- aos css load -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
@@ -60,10 +62,9 @@
                                         <li><a href="#services">Services</a></li>
                                         <li><a href="#portfolio">Portfolio</a></li>
                                         <li><a href="#contact">Contact</a></li>
-                                        <li><a href="#form" class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-jost font-semibold  tracking-wide text-white bg-gray-500 rounded-lg group">
+                                        <li><a href="#form" class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-jost font-semibold  tracking-wide text-white bg-gray-500 rounded-full group">
                                                 <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-theme rounded-full group-hover:w-56 group-hover:h-56 "></span>
-                                                <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-dark"></span>
-                                                <span class="relative z-10 hover:text-dark">Hire me</span>
+                                                <span class="relative z-10 text-white">Hire me</span>
                                             </a>    
                                         </li>
                                     </ul>
@@ -85,12 +86,12 @@
             <div class="md:py-25 py-10 ">
                 <div class="container">
                     <div class="flex items-center md:flex-row flex-col justify-center ">
-                        <div class="hero_left md:w-1/2 flex md:justify-start justify-center mb-10  ">
+                        <div class="hero_left md:w-1/2 flex md:justify-start justify-center mb-10" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
                             <div class="hero_img md:max-w-[25rem] max-w-[15rem] md:max-h-[25rem] max-h-[15rem] overflow-hidden  rounded-[50%] h-full w-full border-8 border-theme shadow-2xl shadow-theme">
                                 <img class="" src="assets/images/about_img.png" alt="Shahriar">
                             </div>
                         </div>
-                        <div class="hero_right md:w-1/2 text-white  ">
+                        <div class="hero_right md:w-1/2 text-white" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300">
                             <h1 class="md:text-7xl text-5xl text-white font-jost font-bold capitalize md:text-start text-center">
                                 hello, this is
                             </h1>
@@ -104,9 +105,8 @@
                                 </h4>
                             </div>
                             <div class="flex md:justify-start justify-center">
-                                <a href="#form" class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-jost font-semibold  tracking-wide text-white bg-gray-500 rounded-lg group">
+                                <a href="#form" class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-jost font-normal  tracking-wide text-white bg-gray-500 rounded-full group">
                                     <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-theme rounded-full group-hover:w-56 group-hover:h-56"></span>
-                                    <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-dark"></span>
                                     <span class="relative">Hire me</span>
                                 </a>
                             </div>
@@ -118,34 +118,33 @@
      </section>
     <!-- About Us Section -->
      <section id="about">
-        <div class="bg-white">
+        <div class="bg-dark">
             <div class="py-25 mt-20">
                 <div class="container">
-                    <h2 class="text-center md:pb-20 pb-10">
+                    <h2 class="text-center md:pb-20 pb-10" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
                         About Me
                     </h2>
                     <div class="flex items-center md:flex-row flex-col">
-                        <div class="about-left md:w-1/2 flex justify-center  ">
+                        <div class="about-left md:w-1/2 flex justify-center" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
                             <div class="about_img max-w-[12.5rem] max-h-[12.5rem] rounded-[50%] border-4 border-theme overflow-hidden shadow-2xl shadow-theme mb-5">
                                 <img class="" src="assets/images/about_img.png" alt="Shahriar">
                             </div>
                         </div>
-                        <div class="about-right md:w-1/2 text-dark font-jost  ">
-                            <h3 class="md:text-2xl text-xl text-dark font-jost font-bold flex md:justify-start justify-center mb-4">
+                        <div class="about-right md:w-1/2 text-white font-jost" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
+                            <h3 class="md:text-2xl text-xl text-white font-jost font-bold flex md:justify-start justify-center mb-4">
                                 I Am Shahriar and 
                             </h3>
-                            <h4 class="md:text-2xl text-xl text-dark font-jost font-bold flex md:justify-start justify-center">
+                            <h4 class="md:text-2xl text-xl text-white font-jost font-bold flex md:justify-start justify-center">
                                 i'm a <span class="typing2 text-theme ml-1"></span>
                             </h4>
-                            <p class="py-7 md:text-xl text-base text-dark font-jost font-medium text-justify">
+                            <p class="py-7 text-base text-white font-jost font-normal text-justify">
                                 I’m a passionate Web Designer and WordPress Developer with a strong eye for clean and user-friendly design.
                                 I specialize in creating responsive websites that are fast, functional, and easy to manage.
                                 From custom themes to full website builds, I bring ideas to life on the web.
                             </p>
                             <div class="flex md:justify-start justify-center">
-                                <a id="" href="#_" class="about-btn relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-jost font-semibold  tracking-wide text-white bg-gray-500 rounded-lg group">
+                                <a id="" href="#_" class="about-btn relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-jost font-normal  tracking-wide text-white bg-gray-500 rounded-full group">
                                     <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-theme rounded-full group-hover:w-56 group-hover:h-56"></span>
-                                    <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-dark"></span>
                                     <span class="relative">Download Cv</span>
                                 </a>
                             </div>
@@ -157,9 +156,8 @@
                             <img class="w-full rounded-2xl" src="assets/images/cv.jpg" alt="cv">
                         </div>
                         <div class="flex justify-center mb-10 mt-10">
-                            <a href="" class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-jost font-semibold  tracking-wide text-white bg-gray-500 rounded-lg group">
+                            <a href="" class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-jost font-semibold  tracking-wide text-white bg-gray-500 rounded-full group">
                                 <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-theme rounded-full group-hover:w-56 group-hover:h-56"></span>
-                                <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-dark"></span>
                                 <span class="relative">Download</span>
                             </a>
                         </div>
@@ -178,74 +176,74 @@
         <div class="bg-dark">
             <div class="py-25">
                 <div class="container">
-                    <h2 class="text-center pb-20">
+                    <h2 class="text-center pb-20" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
                         <span class="text-white pr-4">My</span>Skills
                     </h2>
                     <div class="flex items-center flex-wrap md:flex-row flex-col gap-y-10">
                         <div class="md:w-1/2 md:pr-5 md:border-r-2 md:border-theme w-full">
-                            <div class="flex flex-col w-full gap-y-10">
+                            <div class="flex flex-col w-full gap-y-10" data-aos="fade-up-left" data-aos-duration="1500" data-aos-delay="300">
                                 <div>
-                                    <span class="md:text-2xl text-xl font-jost font-bold text-white">Html</span>
+                                    <span class="text-xl font-jost font-normal text-white">Html</span>
                                     <div class="flex items-center gap-1">
                                         <div class="w-full bg-gray-200 rounded-full md:h-2.5 h-1.5 dark:bg-gray-700">
                                             <div class="bg-theme md:h-2.5 h-1.5 rounded-full" style="width: 99%">
                                             </div>
                                         </div>
-                                        <span class="text-base font-jost font-bold text-theme">99%</span>
+                                        <span class="text-base font-jost font-normal text-theme">99%</span>
                                     </div>
                                 </div>
                                 <div>
-                                    <span class="md:text-2xl text-xl font-jost font-bold text-white">Css</span>
+                                    <span class="text-lg font-jost font-normal text-white">Css</span>
                                     <div class="flex items-center gap-1">
                                         <div class="w-full bg-gray-200 rounded-full md:h-2.5 h-1.5 dark:bg-gray-700">
                                             <div class="bg-theme md:h-2.5 h-1.5 rounded-full" style="width: 95%">
                                             </div>
                                         </div>
-                                        <span class="text-base font-jost font-bold text-theme">95%</span>
+                                        <span class="text-base font-jost font-normal text-theme">95%</span>
                                     </div>
                                 </div>
                                 <div>
-                                    <span class="md:text-2xl text-xl font-jost font-bold text-white">Tailwind</span>
+                                    <span class="text-lg font-jost font-normal text-white">Tailwind</span>
                                     <div class="flex items-center gap-1">
                                         <div class="w-full bg-gray-200 rounded-full md:h-2.5 h-1.5 dark:bg-gray-700">
                                             <div class="bg-theme md:h-2.5 h-1.5 rounded-full" style="width: 90%">
                                             </div>
                                         </div>
-                                        <span class="text-base font-jost font-bold text-theme">90%</span>
+                                        <span class="text-base font-jost font-normal text-theme">90%</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="md:w-1/2 md:pl-5 w-full flex flex-col gap-y-10">
+                        <div class="md:w-1/2 md:pl-5 w-full flex flex-col gap-y-10" data-aos="fade-up-right" data-aos-duration="1500" data-aos-delay="300">
                             <div>
-                                <span class="md:text-2xl text-xl font-jost font-bold text-white">Php</span>
+                                <span class="text-xl font-jost font-normal text-white">Php</span>
                                 <div class="flex items-center gap-1">
                                     <div class="w-full bg-gray-200 rounded-full md:h-2.5 h-1.5 dark:bg-gray-700">
                                         <div class="bg-theme md:h-2.5 h-1.5 rounded-full" style="width: 45%">
                                         </div>
                                     </div>
-                                    <span class="text-base font-jost font-bold text-theme">45%</span>
+                                    <span class="text-base font-jost font-normal text-theme">45%</span>
                                 </div>
                             </div>
                             <div>
-                                <span class="md:text-2xl text-xl font-jost font-bold text-white">WordPress</span>
+                                <span class="text-xl font-jost font-normal text-white">WordPress</span>
                                 <div class="flex items-center gap-1">
                                     <div class="w-full bg-gray-200 rounded-full md:h-2.5 h-1.5 dark:bg-gray-700">
                                         <div class="bg-theme md:h-2.5 h-1.5 rounded-full" style="width: 60%">
                                         </div>
                                     </div>
-                                    <span class="text-base font-jost font-bold text-theme">60%</span>
+                                    <span class="text-base font-jost font-normal text-theme">60%</span>
                                 </div>
                             </div>
                             <div>
-                                <span class="md:text-2xl text-xl font-jost font-bold text-white">JavaScripts</span>
+                                <span class="text-xl font-jost font-normal text-white">JavaScripts</span>
                                 <div class="flex items-center gap-1">
                                     <div class="w-full bg-gray-200 rounded-full md:h-2.5 h-1.5 dark:bg-gray-700">
                                         <div class="bg-theme md:h-2.5 h-1.5 rounded-full" style="width: 40%">
                                         </div>
                                     </div>
-                                    <span class="text-base font-jost md:font-bold font-medium text-theme">40%</span>
+                                    <span class="text-base font-jost font-normal text-theme">40%</span>
                                 </div>
                             </div>
                         </div>
@@ -256,17 +254,17 @@
     </section>
     <!-- Services Section -->
     <section id="services">
-        <div class="bg-white">
+        <div class="bg-dark">
             <div class="py-25">
                 <div class="container">
-                    <h2 class="uppercase text-center pb-20">
-                        <span class="text-dark pr-4">My</span>Services
+                    <h2 class="uppercase text-center pb-20" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                        My Services
                     </h2>
                     <div class="flex items-center gap-y-15 flex-wrap md:flex-row flex-col">
                         <!-- web design -->
-                        <div class="md:w-1/2 md:pr-5">
+                        <div class="md:w-1/2 md:pr-5" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
                             <div class="flex flex-col gap-y-10 w-full">
-                                <div class="bg-dark rounded-md hover:border hover:border-theme transition duration-500 hover:shadow-xl hover:shadow-dark cursor-pointer">
+                                <div class="bg-transparent rounded-md border border-dark-border transition duration-500 hover:shadow-xl hover:shadow-dark-border cursor-pointer">
                                     <div class="p-10">
                                         <div class="text-3xl items-center justify-center flex font-bold text-white w-15 h-15 bg-theme rounded-[50%] shadow-2xl shadow-theme cursor-pointer mb-5">
                                             <i class="fa-solid fa-laptop"></i>
@@ -274,11 +272,11 @@
                                         <h3 class="md:text-4xl text-3xl md:font-semibold font-medium text-theme py-5 cursor-pointer">
                                             Web design & Development
                                         </h3>
-                                        <p class="text-base text-white font-normal font-justo pb-10 pr-10">
+                                        <p class="text-sm text-white leading-6 font-normal font-justo pb-10 pr-10">
                                             I specialize in building modern, responsive websites using the latest front-end technologies like HTML, CSS, Tailwind, and Bootstrap. From design to deployment, I deliver clean, maintainable code and intuitive UI/UX.
                                         </p>
                                         <div class="pb-5">
-                                            <a href="" class="md:text-xl text-lg text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
+                                            <a href="" class="md:text-base text-sm text-white font-normal font-justo hover:text-theme cursor-pointer tracking-wide">
                                                 <div class="flex items-center gap-4">
                                                     <span><i class="fa-solid fa-code"></i></span>
                                                     <span>HTML, CSS, JS Development.</span>
@@ -286,7 +284,7 @@
                                             </a>
                                         </div>
                                         <div class="pb-5">
-                                            <a href="" class="md:text-xl text-lg text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
+                                            <a href="" class="md:text-base text-sm text-white font-normal font-justo hover:text-theme cursor-pointer tracking-wide">
                                                 <div class="flex items-center gap-4">
                                                     <span class="pr-1"><i class="fa-brands fa-css"></i></span>
                                                     <span>Tailwind CSS & Bootstrap Layouts.</span>
@@ -294,7 +292,7 @@
                                             </a>
                                         </div>
                                         <div class="pb-5">
-                                            <a href="" class="md:text-xl text-lg text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
+                                            <a href="" class="md:text-base text-sm text-white font-normal font-justo hover:text-theme cursor-pointer tracking-wide">
                                                 <div class="flex items-center gap-4">
                                                     <span><i class="fa-solid fa-desktop"></i></span>
                                                     <span>Responsive Web Design.</span>
@@ -302,7 +300,7 @@
                                             </a>
                                         </div>
                                         <div class="pb-5">
-                                            <a href="" class="md:text-xl text-lg text-white  font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
+                                            <a href="" class="md:text-lg text-base text-white  font-normal font-justo hover:text-theme cursor-pointer tracking-wide">
                                                 <div class="flex items-center gap-4">
                                                     <span><i class="fa-solid fa-globe"></i></span>
                                                     <span>Cross-Browser Compatibility.</span>
@@ -315,9 +313,9 @@
                             </div>
                         </div>
                         <!-- wordpress -->
-                        <div class="md:w-1/2 md:pl-5">
+                        <div class="md:w-1/2 md:pl-5" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="300">
                             <div class="flex flex-col gap-y-10 w-full">
-                                <div class="bg-dark rounded-md hover:border hover:border-theme transition duration-500 hover:shadow-xl hover:shadow-dark cursor-pointer">
+                                <div class="bg-transparent rounded-md border border-dark-border transition duration-500 hover:shadow-xl hover:shadow-dark-border cursor-pointer">
                                     <div class="p-10">
                                         <div class="text-3xl items-center justify-center flex font-bold text-white w-15 h-15 bg-theme rounded-[50%] shadow-2xl shadow-theme cursor-pointer mb-5">
                                             <i class="fa-brands fa-wordpress-simple"></i>
@@ -325,11 +323,11 @@
                                         <h3 class="md:text-4xl text-3xl md:font-semibold font-medium text-theme py-5 cursor-pointer">
                                             WordPress & CMS Solutions
                                         </h3>
-                                        <p class="text-base text-white font-normal font-justo pb-10 pr-10">
+                                        <p class="text-sm leading-6 text-white font-normal font-justo pb-10 pr-10">
                                             I build powerful and dynamic websites using WordPress. Whether it's theme customization, Elementor design, or WooCommerce integration, I ensure your site is scalable, secure, and easy to manage.
                                         </p>
                                         <div class="pb-5">
-                                            <a href="" class="md:text-xl text-lg text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
+                                            <a href="" class="md:text-base text-sm text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
                                                 <div class="flex items-center gap-4">
                                                     <span><i class="fa-brands fa-wordpress"></i></span>
                                                     <span>WordPress Development.</span>
@@ -337,7 +335,7 @@
                                             </a>
                                         </div>
                                         <div class="pb-5">
-                                            <a href="" class="md:text-xl text-lg text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
+                                            <a href="" class="md:text-base text-sm text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
                                                 <div class="flex items-center gap-4">
                                                     <span><i class="fa-brands fa-elementor"></i></span>
                                                     <span>Elementor Custom Design.</span>
@@ -345,7 +343,7 @@
                                             </a>
                                         </div>
                                         <div class="pb-5">
-                                            <a href="" class="md:text-xl text-lg text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
+                                            <a href="" class="md:text-base text-sm text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
                                                 <div class="flex items-center gap-4">
                                                     <span><i class="fa-solid fa-store"></i></span>
                                                     <span>WooCommerce Store Setup.</span>
@@ -353,7 +351,7 @@
                                             </a>
                                         </div>
                                         <div class="pb-5">
-                                            <a href="" class="md:text-xl text-lg text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
+                                            <a href="" class="md:text-base text-sm text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
                                                 <div class="flex items-center gap-4">
                                                     <span><i class="fa-solid fa-screwdriver-wrench"></i></span>
                                                     <span>CMS Maintenance & Bug Fixing.</span>
@@ -366,9 +364,9 @@
                             </div>
                         </div>
                         <!-- pixel perfect & tools -->
-                        <div class="md:w-1/2 md:pr-5">
+                        <div class="md:w-1/2 md:pr-5" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="300">
                             <div class="flex flex-col gap-y-10 w-full">
-                                <div class="bg-dark rounded-md hover:border hover:border-theme transition duration-500 hover:shadow-xl hover:shadow-dark cursor-pointer">
+                                <div class="bg-transparent rounded-md border border-dark-border transition duration-500 hover:shadow-xl hover:shadow-dark-border cursor-pointer">
                                     <div class="p-10">
                                         <div class="text-3xl items-center justify-center flex font-bold text-white w-15 h-15 bg-theme rounded-[50%] shadow-2xl shadow-theme cursor-pointer mb-5">
                                             <i class="fa-solid fa-rocket"></i>
@@ -376,12 +374,12 @@
                                         <h3 class="md:text-4xl text-3xl md:font-semibold font-medium text-theme py-5 cursor-pointer">
                                             Front-End Development & Optimization Services
                                         </h3>
-                                        <p class="text-base text-white font-normal font-justo pb-10 pr-10">
+                                        <p class="text-sm leading-6 text-white font-normal font-justo pb-10 pr-10">
                                             I offer Front-End Development & Optimization services, including pixel-perfect design to code conversion, speed optimization, and Git workflow.
-                                            Your website will be fast, fully responsive, and work  ly across all modern browsers and devices.
+                                            Your website will be fast, fully responsive, and work seamlessly across all modern browsers and devices.
                                         </p>
                                         <div class="pb-5">
-                                            <a href="" class="md:text-xl text-lg text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
+                                            <a href="" class="md:text-base text-sm text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
                                                 <div class="flex items-center gap-4">
                                                     <span><i class="fa-solid fa-code"></i></span>
                                                     <span>Figma to Code (Pixel Perfect).</span>
@@ -389,7 +387,7 @@
                                             </a>
                                         </div>
                                         <div class="pb-5">
-                                            <a href="" class="md:text-xl text-lg text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
+                                            <a href="" class="md:text-base text-sm text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
                                                 <div class="flex items-center gap-4">
                                                     <span class="pr-1"><i class="fa-solid fa-gauge"></i></span>
                                                     <span>Website Speed Optimization.</span>
@@ -397,7 +395,7 @@
                                             </a>
                                         </div>
                                         <div class="pb-5">
-                                            <a href="" class="md:text-xl text-lg text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
+                                            <a href="" class="md:text-base text-sm text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
                                                 <div class="flex items-center gap-4">
                                                     <span class="pr-1"><i class="fa-brands fa-github"></i></span>
                                                     <span>Git & GitHub Workflow.</span>
@@ -405,7 +403,7 @@
                                             </a>
                                         </div>
                                         <div class="pb-5">
-                                            <a href="" class="md:text-xl text-lg text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
+                                            <a href="" class="md:text-base text-sm text-white font-medium font-justo hover:text-theme cursor-pointer tracking-wide">
                                                 <div class="flex items-center gap-4">
                                                     <span class="pr-2"><i class="fa-solid fa-mobile-screen"></i></span>
                                                     <span>CMS Maintenance & Bug Fixing.</span>
@@ -427,11 +425,11 @@
      <section id="portfolio">
         <div class="py-25">
             <div class="container">
-                <h2 class="uppercase text-center pb-20">
+                <h2 class="uppercase text-center pb-20" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="300">
                     <span class="text-white pr-4">My</span>Portfolio
                 </h2>
                 
-                <div class="tabs flex items-center flex-wrap justify-center gap-7 font-jost font-semibold text-2xl text-white  pb-10">
+                <div class="tabs flex items-center flex-wrap justify-center gap-10 font-jost font-bold text-base text-white  pb-10">
                     <button class=" tab cursor-pointer active" data-category="all" href="">All</button>
                     <button class=" tab cursor-pointer" data-category="design" href="">Design</button>
                     <button class=" tab cursor-pointer" data-category="development" href="">Development</button>
@@ -740,29 +738,29 @@
      </section>
     <!-- Contact Section -->
     <section id="contact">
-        <div class="bg-white">
+        <div class="bg-dark">
             <div class="pt-25 pb-20">
                 <div class="container">
-                    <h2 class="uppercase text-center pb-20">
+                    <h2 class="uppercase text-center pb-20" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
                         Contact<span class="text-dark pl-4">Me</span>
                     </h2>
-                    <div class="bg-dark rounded-3xl">
+                    <div class="bg-transparent border border-dark-border shadow-xl shadow-dark-border rounded-3xl">
                         <div class="p-10">
                             <div class="flex md:flex-row flex-col ">
-                                <div class="md:w-1/2 md:pr-5 md:border-r md:border-theme">
+                                <div class="md:w-1/2 md:pr-5 md:border-r md:border-theme" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="300">
                                     <h3 class="text-4xl font-bold text-theme py-5 cursor-pointer md:max-w-2xs md:text-start text-center">
                                         Get Ready To Create Great
                                     </h3>
-                                    <p class="text-base text-white font-medium font-oswald md:max-w-sm tracking-wide pb-10 ">
+                                    <p class="text-sm text-white font-normal font-oswald md:max-w-sm tracking-wide pb-10 ">
                                         Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
                                     </p>
                                     <div class="flex items-center gap-6 pb-5">
-                                        <span class="text-4xl text-theme">
+                                        <span class="text-2xl text-theme">
                                             <i class="fa-solid fa-envelope"></i>
                                         </span>
                                         <div class="flex flex-col gap-y-2 font-jost">
-                                            <span class="text-2xl font-semibold text-theme">Mail Me</span>
-                                            <span class="text-white text-xl font-medium cursor-pointer">
+                                            <span class="text-base font-bold text-theme">Mail Me</span>
+                                            <span class="text-white text-[15px] font-normal cursor-pointer">
                                                 <a href="mailto:md.shariar1999@gmail">
                                                     md.shariar1999@gmail.com
                                                 </a>
@@ -770,12 +768,12 @@
                                         </div>
                                     </div>
                                     <div class="flex items-center gap-6 pb-10">
-                                        <span class="text-4xl text-theme">
+                                        <span class="text-2xl text-theme">
                                             <i class="fa-solid fa-phone"></i>
                                         </span>
                                         <div class="flex flex-col gap-y-2 font-jost">
-                                            <span class="text-2xl font-semibold text-theme">Call Me</span>
-                                            <span class="text-white text-xl font-medium cursor-pointer">
+                                            <span class="text-base font-bold text-theme">Call Me</span>
+                                            <span class="text-white text-[15px] font-normal cursor-pointer">
                                                 <a href="tel:+8801747280993">
                                                     +8801747280993
                                                 </a>
@@ -800,29 +798,28 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div id="form" class="md:w-1/2 md:pl-10">
+                                <div id="form" class="md:w-1/2 md:pl-10" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="300">
                                     <div class="pt-15">
                                         <form action="https://formspree.io/f/xyzjbkgp" method="POST">
                                             <div class="flex flex-col gap-y-5 md:pr-10">
                                                 <div>
-                                                    <input type="text" placeholder="NAME" id="name" required class="w-full py-2 text-theme focus:outline-none border-b-2 border-theme font-jost font-medium">
+                                                    <input type="text" placeholder="NAME" id="name" required class="w-full py-2 text-theme focus:outline-none border-b-2 border-theme font-jost font-normal">
                                                 </div>
                                                 <div>
-                                                    <input type="email" placeholder="EMAIL" id="email" required class="w-full py-2 text-theme focus:outline-none border-b-2 border-theme font-jost font-medium">
+                                                    <input type="email" placeholder="EMAIL" id="email" required class="w-full py-2 text-theme focus:outline-none border-b-2 border-theme font-jost font-normal">
                                                 </div>
                                                 <div>
-                                                    <input type="tel" placeholder="PHONE" id="phone" required class="w-full py-2 text-theme focus:outline-none border-b-2 border-theme font-jost font-medium">
+                                                    <input type="tel" placeholder="PHONE" id="phone" required class="w-full py-2 text-theme focus:outline-none border-b-2 border-theme font-jost font-normal">
                                                 </div>
                                                 <div>
-                                                    <input type="Subject" placeholder="SUBJECT" id="phone" required class="w-full py-2 text-theme focus:outline-none border-b-2 border-theme font-jost font-medium">
+                                                    <input type="Subject" placeholder="SUBJECT" id="phone" required class="w-full py-2 text-theme focus:outline-none border-b-2 border-theme font-jost font-normal">
                                                 </div>
                                                 <div>
-                                                    <textarea name="message" id="mesage" placeholder="MESSAGE" required class="w-full py-2 text-theme focus:outline-none border-b-2 border-theme font-jost font-medium"></textarea>
+                                                    <textarea name="message" id="mesage" placeholder="MESSAGE" required class="w-full py-2 text-theme focus:outline-none border-b-2 border-theme font-jost font-normal"></textarea>
                                                 </div>
                                                 <button type="submit" class="cursor-pointer">
-                                                    <span class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-jost font-semibold  tracking-wide text-white bg-gray-500 rounded-lg group">
+                                                    <span class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-jost font-normal  tracking-wide text-white bg-gray-500 rounded-full group">
                                                     <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-theme rounded-full group-hover:w-56 group-hover:h-56"></span>
-                                                    <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-dark"></span>
                                                     <span class="relative">Send Message</span>
                                                     </span>
                                                 </button>
@@ -839,16 +836,18 @@
     </section>
     <!-- footer section -->
     <footer>
-        <div class="py-5">
+        <div class="py-5 border-t border-dark-border" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
             <p class="text-center text-theme text-xl font-jost font-medium">Copyright &copy; Md.Shahriar</p>
         </div>
     </footer>
 
-    
-
-
     <!-- Java Scripts Load-->
     <script src="assets/js/main.js"></script>
+    <!-- aos java scripts load -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+          AOS.init();
+    </script>
     
 </body>
 </html>

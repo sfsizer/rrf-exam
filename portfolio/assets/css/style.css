@@ -115,10 +115,8 @@
     color: var(--color-theme);
 }
 .tabs .active {
-    background-color: var(--color-theme);
-    color: var(--color-dark);
-    border-radius: 0.5rem;
-    padding: 0.5rem;
+    border-bottom: 2px solid var(--color-theme);
+    padding: 8px 10px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -182,4 +180,7 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   white-space: nowrap;
+}
+.color{
+    color: #48515a;
 }
