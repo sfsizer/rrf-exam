@@ -57,8 +57,8 @@
     --color-theme-hover: #0badce;
     --color-dark-border: #48515a;
     --color-dark-tranparent: #21252941;
-    --font-jost: 'Jost', sans-serif;
-    --font-oswald: 'Oswald', sans-serif;
+    --font-jost: "Rajdhani", sans-serif;
+    --font-oswald: "Rubik", sans-serif;
   }
 }
 @layer base {
@@ -1045,7 +1045,7 @@
     }
   }
 }
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 .container {
   margin-inline: auto;
   max-width: 1280px;
