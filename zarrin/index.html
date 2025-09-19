@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarrin</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml"">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header class="z-1000">
+        <div class="bg-white">
+            <div class="container mx-auto">
+                <div class="flex items-center justify-between md:px-15 lg:mx-0 mx-6 ">
+                    <div class="logo z-1000">
+                        <a href="#">
+                            <img src="assets/images/logo.png" alt="logo-image">
+                        </a>
+                    </div>
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                    <div class="menu">
+                        
+                        <ul class="flex items-center md:flex-row flex-col">
+                            <li class="px-4 py-2"><a href="#">Home</a></li>
+                            <li class="px-4 py-2"><a href="#">Blog</a></li>
+                            <li class="px-4 py-2"><a href="#">About</a></li>
+                            <form class="flex items-center justify-center p-2 mr-3" role="search" method="get" action="">
+                                <input type="search" placeholder="" name="s" style="border: 1px solid black"  required
+                                    class="md:max-w-[100px] w-[70px]  rounded-md px-2 md:py-1 py-0 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:border-transparent">
+                                <button type="submit"
+                                    class=" text-dark rounded-md px-4 py-4 ml-1  focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50 cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:size-8 size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                    </svg>
+
+                                </button>
+                            </form>
+                            <a class="btn--primary md:my-[21px] my-3" href="">
+                                Contact Us
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="bg-primary pt-[91px] md:pt-[87px] lg:pt-[122px] md:[70px]  pb-10.5 lg:pb-[98px] relative">
+            <div class="container mx-auto">
+                <div class="flex md:flex-row flex-col items-center md:gap-8.25 lg:gap-11.50 gap-y-14.5 lg:mx-0 md:mx-15 px-6">
+                    <!-- hero content -->
+                     <div class="content md:w-1/2 w-full">
+                        <h1>
+                            How AI will <br> Change the Future
+                        </h1>
+                        <p class="md:max-w-[416px] w-full pt-[28px] pb-[64px] text-white">
+                            The future of AI will see home robots having enhanced intelligence, increased capabilities, and becoming more personal and possibly cute. For example, home robots will overcome navigation, direction
+                        </p>
+                        <a class="btn-white" href="">
+                            Learn more
+                        </a>
+                     </div>
+                    <!-- hero images -->
+                     <div class="hero-img md:w-1/2 w:full z-300">
+                        <img src="assets/images/hero-img.png" alt="hero-image">
+                     </div>
+                </div>
+            </div>
+            <img class="absolute  top-[-150px] overflow-hidden hidden md:block" src="assets/images/hero-up-vector.png" alt="">
+            <img class="absolute right-0 bottom-[-150px]" src="assets/images/hero-vector.png" alt="">
+        </div>
+        
+    </section>
+    <!-- First blog show -->
+     <section class="first-blog bg-body-color">
+        <div class="pt-32.5 pb-10 md:pb-50 lg:pb-30 md:mx-15 lg:mx-0 mx-6">
+            <div class="container">
+                <div class="w-full md:max-h[413px] lg:max-h-[576px] rounded-[16px] md:relative md:px-0 px-4.25 md:py-0 py-5 md:border-none border border-[#DBDBDB]">
+                    <img class="h-full w-full rounded-2xl" src="assets/images/blog-img-big.png" alt="blog-img" >
+
+                    <div class=" lg:max-w-[920px] md:max-w-[660px] lg:max-h-[360px] md:max-h-[258px]  md:absolute md:right-0  md:bottom-[-86px]">
+                        <div class="bg-white md:pl-8 pt-8 md:pr-26 pb-10.5 md:rounded-[16px]">
+                            <div class="flex items-center gap-2">
+                                <span class="text-secondary font-bold text-[12px] font-roboto leading-4.5 uppercase">Development</span>
+                                <span class="text-light-gray font-medium text-[12px] font-roboto leading-4.5">16 March 2023</span>
+                            </div>
+                            <h4 class="text-secondary pt-6.25 pb-1.75">
+                                How to make a Game look more attractive with New VR & AI Technology
+                            </h4>
+                            <p class="text-dark-gray pb-9.5">
+                                Google has been investing in AI for many years and bringing its benefits to individuals, businesses and communities. Whether it’s publishing state-of-the-art research, building helpful products or developing tools and resources that enable others, we’re committed to making AI accessible to everyone.
+                            </p>
+                            <a class="btn--border-small" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+     </section>
+    <!-- Our Recent Blog -->
+     <section class="our-recent-blog bg-body-color">
+        <div class="md:mt-30 mt-15 md:pb-20 pb-0">
+            <div class="container">
+                <div class="flex items-center justify-between mb-20 md:mx-15 lg:mx-0 mx-6">
+                    <div class="md:pl-0 pl-1.25">
+                        <h3>
+                            Our Recent Post
+                        </h3>
+                    </div>
+                    <div>
+                        <a class="btn--primary-small" href="">
+                            View All
+                        </a>
+                    </div>
+                </div>
+                <!-- blog 1 -->
+                <div class="hidden md:block ">
+                    <div class="flex justify-between gap-10 lg:gap-14 mb-15.75 md:mx-15 lg:mx-0">
+                        <div class="max-w-[712px]">
+                            <div class="lg:max-w-[712px] lg:max-h-[456px] md:max-w-[511px] h-full">
+                                <img class="h-full w-full rounded-2xl" src="assets/images/blog-img-big.png" alt="blog mage">
+                            </div>
+                        </div>
+                        <div class="max-w-[464px]">
+                            <div class="pt-4 pb-8.25">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-secondary font-bold text-[12px] font-roboto leading-4.5 uppercase">Development</span>
+                                    <span class="text-light-gray font-medium text-[12px] font-roboto leading-4.5">16 March 2023</span>
+                                </div>
+                                <h4 class="text-secondary pt-6.75 pb-3.25">
+                                    How to make a Game look more attractive with New VR & AI Technology
+                                </h4>
+                                <div class="mb-10">
+                                    <p class="text-dark-gray mb-6 inline-block lg:max-h-[120px] md:max-h-[85px]">
+                                    Google has been investing in AI for many years and bringing its benefits to individuals, businesses and communities. Whether it’s publishing state-of-the-art research, building helpful products or developing tools and resources that enable others, we’re committed to making AI accessible to everyone.
+                                    </p>
+                                </div>
+                                <a class="btn--border-small inline-block" href="">Read More</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 gap-y-10 flex-wrap justify-center md:mx-15 lg:mx-0 mx-6">
+                    <!-- Blog 2 -->
+                    <div class="lg:max-w-[400px] w-full">
+                        <div class="">
+                            <div class="mb-10">
+                                <img class="w-full h-full rounded-2xl" src="assets/images/popular-post-1.png" alt=" blog-img">
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-secondary font-bold text-[12px] font-roboto leading-4.5 uppercase">Travel</span>
+                                <span class="text-light-gray font-medium text-[12px] font-roboto leading-4.5">13 March 2023</span>
+                            </div>
+                            <div class="">
+                                <h6 class="pt-4 pb-1.75">
+                                    8 Rules of Travelling In Sea You Need To Know
+                                </h6>
+                                <div class=" flex flex-col gap-y-2.5 md:gap-y-3 lg:gap-y-4.75">
+                                    <p class="text-dark-gray max-h-[72px] mb-4.75">
+                                    Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs 
+                                    </p>
+                                    <a class="text-primary text-[13px] lg:text-lg font-bold leading-6.75 underline" href="">
+                                        Read More...
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BLog 3 -->
+                    <div class="lg:max-w-[400px] w-full">
+                        <div class="">
+                            <div class="mb-10">
+                                <img class="w-full h-full rounded-2xl" src="assets/images/popular-post-1.png" alt=" blog-img">
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-secondary font-bold text-[12px] font-roboto leading-4.5 uppercase">Travel</span>
+                                <span class="text-light-gray font-medium text-[12px] font-roboto leading-4.5">13 March 2023</span>
+                            </div>
+                            <div class="">
+                                <h6 class="pt-4 pb-1.75">
+                                    8 Rules of Travelling In Sea You Need To Know
+                                </h6>
+                                <div class=" flex flex-col gap-y-2.5 md:gap-y-3 lg:gap-y-4.75">
+                                    <p class="text-dark-gray max-h-[72px] mb-4.75">
+                                    Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs 
+                                    </p>
+                                    <a class="text-primary text-[13px] lg:text-lg font-bold leading-6.75 underline" href="">
+                                        Read More...
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog 4 -->
+                    <div class="lg:max-w-[400px] w-full">
+                        <div class="">
+                            <div class="mb-10">
+                                <img class="w-full h-full rounded-2xl" src="assets/images/popular-post-1.png" alt=" blog-img">
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-secondary font-bold text-[12px] font-roboto leading-4.5 uppercase">Travel</span>
+                                <span class="text-light-gray font-medium text-[12px] font-roboto leading-4.5">13 March 2023</span>
+                            </div>
+                            <div class="">
+                                <h6 class="pt-4 pb-1.75">
+                                    8 Rules of Travelling In Sea You Need To Know
+                                </h6>
+                                <div class=" flex flex-col gap-y-2.5 md:gap-y-3 lg:gap-y-4.75">
+                                    <p class="text-dark-gray max-h-[72px] mb-4.75">
+                                    Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs 
+                                    </p>
+                                    <a class="text-primary text-[13px] lg:text-lg font-bold leading-6.75 underline" href="">
+                                        Read More...
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Our Popular Blog -->
+     <section class="our-recent-blog bg-body-color">
+        <div class="pt-20 mb-15 md:mb-25">
+            <div class="container">
+                <div class="flex items-center justify-between mb-15.25 mx-6 md:mx-15 lg:mx-0">
+                    <div>
+                        <h3>
+                            Popular Post
+                        </h3>
+                    </div>
+                    <div>
+                        <a class="btn--primary-small" href="">
+                            View All
+                        </a>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 gap-y-10 flex-wrap justify-center mx-6 md:mx-15 lg:mx-0">
+                    <!-- Blog 2 -->
+                    <div class="md:max-w-[400px] w-full">
+                        <div class="">
+                            <div class="mb-10">
+                                <img class="w-full h-full rounded-2xl" src="assets/images/popular-post-1.png" alt=" blog-img">
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-secondary font-bold text-[12px] font-roboto leading-4.5 uppercase">Travel</span>
+                                <span class="text-light-gray font-medium text-[12px] font-roboto leading-4.5">13 March 2023</span>
+                            </div>
+                            <div class="">
+                                <h6 class="pt-4 pb-1.75">
+                                    8 Rules of Travelling In Sea You Need To Know
+                                </h6>
+                                <div class=" flex flex-col gap-y-2.5 md:gap-y-3 lg:gap-y-4.75">
+                                    <p class="text-dark-gray max-h-[72px] mb-4.75">
+                                    Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs 
+                                    </p>
+                                    <a class="text-primary text-[13px] lg:text-lg font-bold leading-6.75 underline" href="">
+                                        Read More...
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BLog 3 -->
+                    <div class="lg:max-w-[400px] w-full">
+                        <div class="">
+                            <div class="mb-10">
+                                <img class="w-full h-full rounded-2xl" src="assets/images/popular-post-1.png" alt=" blog-img">
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-secondary font-bold text-[12px] font-roboto leading-4.5 uppercase">Travel</span>
+                                <span class="text-light-gray font-medium text-[12px] font-roboto leading-4.5">13 March 2023</span>
+                            </div>
+                            <div class="">
+                                <h6 class="pt-4 pb-1.75">
+                                    8 Rules of Travelling In Sea You Need To Know
+                                </h6>
+                                <div class=" flex flex-col gap-y-2.5 md:gap-y-3 lg:gap-y-4.75">
+                                    <p class="text-dark-gray max-h-[72px] mb-4.75">
+                                    Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs 
+                                    </p>
+                                    <a class="text-primary text-[13px] lg:text-lg font-bold leading-6.75 underline" href="">
+                                        Read More...
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog 4 -->
+                    <div class="lg:max-w-[400px] w-full">
+                        <div class="">
+                            <div class="mb-10">
+                                <img class="w-full h-full rounded-2xl" src="assets/images/popular-post-1.png" alt=" blog-img">
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-secondary font-bold text-[12px] font-roboto leading-4.5 uppercase">Travel</span>
+                                <span class="text-light-gray font-medium text-[12px] font-roboto leading-4.5">13 March 2023</span>
+                            </div>
+                            <div class="">
+                                <h6 class="pt-4 pb-1.75">
+                                    8 Rules of Travelling In Sea You Need To Know
+                                </h6>
+                                <div class=" flex flex-col gap-y-2.5 md:gap-y-3 lg:gap-y-4.75">
+                                    <p class="text-dark-gray max-h-[72px] mb-4.75">
+                                    Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs 
+                                    </p>
+                                    <a class="text-primary text-[13px] lg:text-lg font-bold leading-6.75 underline" href="">
+                                        Read More...
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog 2 -->
+                    <div class="lg:max-w-[400px] w-full">
+                        <div class="">
+                            <div class="mb-10">
+                                <img class="w-full h-full rounded-2xl" src="assets/images/popular-post-1.png" alt=" blog-img">
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-secondary font-bold text-[12px] font-roboto leading-4.5 uppercase">Travel</span>
+                                <span class="text-light-gray font-medium text-[12px] font-roboto leading-4.5">13 March 2023</span>
+                            </div>
+                            <div class="">
+                                <h6 class="pt-4 pb-1.75">
+                                    8 Rules of Travelling In Sea You Need To Know
+                                </h6>
+                                <div class=" flex flex-col gap-y-2.5 md:gap-y-3 lg:gap-y-4.75">
+                                    <p class="text-dark-gray max-h-[72px] mb-4.75">
+                                    Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs 
+                                    </p>
+                                    <a class="text-primary text-[13px] lg:text-lg font-bold leading-6.75 underline" href="">
+                                        Read More...
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BLog 3 -->
+                    <div class="lg:max-w-[400px] w-full">
+                        <div class="">
+                            <div class="mb-10">
+                                <img class="w-full h-full rounded-2xl" src="assets/images/popular-post-1.png" alt=" blog-img">
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-secondary font-bold text-[12px] font-roboto leading-4.5 uppercase">Travel</span>
+                                <span class="text-light-gray font-medium text-[12px] font-roboto leading-4.5">13 March 2023</span>
+                            </div>
+                            <div class="">
+                                <h6 class="pt-4 pb-1.75">
+                                    8 Rules of Travelling In Sea You Need To Know
+                                </h6>
+                                <div class=" flex flex-col gap-y-2.5 md:gap-y-3 lg:gap-y-4.75">
+                                    <p class="text-dark-gray max-h-[72px] mb-4.75">
+                                    Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs 
+                                    </p>
+                                    <a class="text-primary text-[13px] lg:text-lg font-bold leading-6.75 underline" href="">
+                                        Read More...
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog 4 -->
+                    <div class="lg:max-w-[400px] w-full">
+                        <div class="">
+                            <div class="mb-10">
+                                <img class="w-full h-full rounded-2xl" src="assets/images/popular-post-1.png" alt=" blog-img">
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-secondary font-bold text-[12px] font-roboto leading-4.5 uppercase">Travel</span>
+                                <span class="text-light-gray font-medium text-[12px] font-roboto leading-4.5">13 March 2023</span>
+                            </div>
+                            <div class="">
+                                <h6 class="pt-4 pb-1.75">
+                                    8 Rules of Travelling In Sea You Need To Know
+                                </h6>
+                                <div class=" flex flex-col gap-y-2.5 md:gap-y-3 lg:gap-y-4.75">
+                                    <p class="text-dark-gray max-h-[72px] mb-4.75">
+                                    Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs 
+                                    </p>
+                                    <a class="text-primary text-[13px] lg:text-lg font-bold leading-6.75 underline" href="">
+                                        Read More...
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="flex flex-col justify-center items-center bg-body-color pb-10 mb-10 border-b border-primary mx-6 md:mx-15 lg:mx-0">
+                <div class="logo mb-10.5">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+                <div class="footer-menu mb-10.5">
+                    <ul class="flex items-center gap-10">
+                        <li class="px-4 py-2"><a href="#">Home</a></li>
+                        <li class="px-4 py-2"><a href="#">About</a></li>
+                        <li class="px-4 py-2"><a href="#">Blog</a></li>
+                        <li class="px-4 py-2"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="social-icons ">
+                    <div class="flex items-center gap-2">
+                        <a class="bg-primary w-10 h-10 text-center flex justify-center items-center rounded-full uppercase text-white  foni-raleway font- bold text-base leading-6" href="">
+                            fb
+                        </a>
+                        <a class="bg-primary w-10 h-10 text-center flex justify-center items-center rounded-full uppercase text-white  foni-raleway font- bold text-base leading-6" href="">
+                            ln
+                        </a>
+                        <a class="bg-primary w-10 h-10 text-center flex justify-center items-center rounded-full uppercase text-white  foni-raleway font- bold text-base leading-6" href="">
+                            in
+                        </a>
+                        <a class="bg-primary w-10 h-10 text-center flex justify-center items-center rounded-full uppercase text-white  foni-raleway font- bold text-base leading-6" href="">
+                            yt
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pb-13.5 text-center">
+                <p class="text-[#150E06]">
+                    Copyright Ideapeel Inc © 2023. All Right Reserved
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

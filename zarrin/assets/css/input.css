@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@theme {
+    --color-primary: #7C4EE4;
+    --color-secondary: #333333;
+    --color-dark-gray: #666666;
+    --color-light-gray: #999999;
+    --color-white: #ffffff;
+    --color-light-black: #1D1E25;
+    --color-dark: #292C32;
+    --color-body-color: #FAFAFA;
+    --font-raleway: 'Raleway', sans-serif;
+    --font-roboto: 'Roboto', monospace;
+}
+body{
+    @apply font-roboto bg-body-color;
+}
+.container{
+    @apply max-w-[1232px] mx-auto;
+}
+h1{
+    @apply text-light-black font-bold lg:text-[64px] md:text-[45px] text-4xl font-raleway lg:leading-21.5 md:leading-15.25 capitalize text-white ;
+}
+h2{
+    @apply text-light-black font-bold text-[52px] font-raleway leading-12;
+}
+h3{
+    @apply text-secondary font-bold lg:text-[48px] md:text-[35px] text-[20px]  font-raleway lg:leading-12.5 leading-9 lg:tracking-[-0.88px] tracking-[-0.632px];
+}
+h4{
+    @apply  font-bold text-[23px] lg:text-[32px] font-raleway leading-11.25 leading-8 tracking-[-1px];
+}
+h5{
+    @apply text-light-black font-bold text-[26px] font-raleway leading-8 tracking-[-0.26px];
+}
+h6{
+    @apply text-secondary font-bold lg:text-[24px] text-[17px] font-raleway lg:leading-8 leading-5.5 capitalize;
+}
+p{
+    @apply font-roboto text-[12px] md:text-[16px] leading-6;
+}
+.big-p{
+    @apply text-dark font-roboto text-[18px] leading-6;
+}
+li a{
+    @apply text-[#333333] font-raleway text-[16px] font-medium leading-6 hover:text-primary;
+}
+.btn--primary{
+    @apply bg-primary text-white lg:py-4 lg:px-12 py-2.75 px-8.5 rounded-lg inline justify-end items-center gap-2.5 text-center font-raleway font-semibold lg:text-base text-[11px] leading-6;
+}
+.btn--primary-small{
+    @apply bg-primary text-white py-4 px-12 rounded-lg inline justify-end items-center gap-2.5 text-center font-roboto font-bold lg:text-sm text-[10px] leading-6;
+}
+.btn-white{
+    @apply bg-white text-[#373737] py-4 px-12 rounded-lg inline flex-col items-center gap-2.5 shadow-[1px_1px_16px_0_rgba(0,0,0,0.09)] text-center font-raleway font-bold lg:text-sm text-[10px] leading-6 ;
+}
+
+.btn--border{
+    @apply border border-[#04091E] w-[166px] h-[56px] rounded-lg gap-2.5 text-center font-raleway font-semibold text-lg text-[#313131];
+} 
+.btn--border-small{
+    @apply border border-primary py-4 px-12 rounded-lg gap-2.5 text-center font-roboto font-bold leading-[21px] text-[10px] lg:text-sm text-primary hover:bg-primary hover:text-white transition duration-300 ease-in-out;
+} 
+
+/* Header */
+.logo img{
+    @apply lg:max-w-[132px] max-w-[112px] lg:max-h-[43.651px] max-h-[31px];
+}
+#menu-toggle{
+    @apply block md:hidden;
+}
+
+
+
+/* hero area */
+.hero-img img{
+    @apply lg:max-w-[608px] md:max-w-[436px]  w-full lg:max-h-[576px] md:max-h-[413px];
+}
+
