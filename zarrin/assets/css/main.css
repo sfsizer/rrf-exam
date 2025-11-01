@@ -44,4 +44,23 @@ header {
     font-size: 28px;
     cursor: pointer;
   }
+  .pd-rs{
+    margin-top: 80px;
+  }
+  
+}
+@media screen and (min-width: 770px) {
+  .main-top-padding{
+    padding-top: 100px;
+  }
+  .pd-rs{
+    margin-top: 80px;
+  }
+  .about-des,
+  .blog-des{
+    padding: 20px 0;
+  }
+  .blog-para{
+    padding-bottom: 20px;
+  }
 }
