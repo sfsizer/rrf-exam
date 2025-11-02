@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@theme{
+    --color-dark: #212529;
+    --color-theme: #0dcaf0;
+    --color-theme-hover: #0badce;
+    --color-white: #F8F9FA;
+    --color-dark-border: #48515a;
+    --color-dark-tranparent: #21252941;
+    --font-jost: "Rajdhani", sans-serif;
+    --font-oswald: "Rubik", sans-serif;
+    --radius-xl: 0.312rem;
+    
+    /* --breakpoint-sm: 48rem;
+    --breakpoint-md: 64rem; */
+}
+.container{
+    @apply max-w-[1280px] mx-auto px-4;
+}
+body{
+    @apply font-jost bg-dark;
+}
+.nav-menu a{
+    @apply py-2 px-4 text-base text-white hover:text-theme-hover hover:transform hover:ease-in rounded-xl font-jost font-normal;
+}
+h2{
+    @apply md:text-5xl text-4xl text-theme font-oswald font-bold;
+}
