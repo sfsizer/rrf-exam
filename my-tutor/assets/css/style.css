@@ -11,7 +11,74 @@
 }
 body{
     font-family: "inter";
+    
 }
+.section{
+    padding: 0 50px;
+}
+@media screen and (max-width: 1040px) {
+    .section{
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 1338px) {
+    .hero-right-form{
+        z-index: 1000;
+        position: relative;
+        background: transparent;
+    }
+    .hero-right-form h2,
+    .hero-right-form h6,
+    .hero-right-form input{
+        color: white;
+    }
+    .hero-right-form input{
+    }
+}
+@media screen and (max-width: 970px) {
+    .hero-right-text{
+        max-width: 350px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .section{
+        padding: 0 10px;
+    }
+    .hero-right-text{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-right-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .hero-right-form h2,
+    .hero-right-form h6{
+        text-align: center;
+    }
+    .btn{
+        color: #424352;
+        background: #fff;
+        border: 1px solid #424352;
+    }
+    .btn svg{
+        fill: #424352;
+        color: #424352;
+    }
+    .event-date svg{
+        width: 37px;
+        height: 24px;
+    }
+}
+
 
 
 .main-menu ul li{
