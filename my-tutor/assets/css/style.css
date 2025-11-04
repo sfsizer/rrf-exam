@@ -16,6 +16,51 @@ body{
 .section{
     padding: 0 50px;
 }
+/* menu */
+.menu-icon {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+  transform: scale(1, 1);
+}
+
+@media only screen and (max-width: 767px) {
+  .menu {
+    background-color: var(--color-white);
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .menu a {
+    margin-left: 12px;
+  }
+
+
+  .menu-icon {
+    display: block;
+    color: #000000;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  .pd-rs{
+    margin-top: 80px;
+  }
+  
+}
+
 @media screen and (max-width: 1040px) {
     .section{
         padding: 0 20px;

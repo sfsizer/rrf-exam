@@ -10,13 +10,13 @@ jQuery(document).ready(function($) {
         arrows: false,
         responsive: [
         {
-            breakpoint: 768, // max-width: 767.98px
+            breakpoint: 1040, // max-width: 1040px
             settings: {
                 slidesToShow: 2
             }
         },
         {
-            breakpoint: 576, // max-width: 575.98px
+            breakpoint: 767, // max-width: 767px
             settings: {
                 slidesToShow: 1
             }
@@ -32,13 +32,13 @@ jQuery(document).ready(function($) {
         arrows: false,
         responsive: [
         {
-            breakpoint: 768, // max-width: 767.98px
+            breakpoint: 1040, // max-width: 1040px
             settings: {
                 slidesToShow: 2
             }
         },
         {
-            breakpoint: 576, // max-width: 575.98px
+            breakpoint: 767, // max-width: 767px
             settings: {
                 slidesToShow: 1
             }
