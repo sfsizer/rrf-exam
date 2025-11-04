@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- font-awesome-link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
-    <!-- ================ BOXICONS ================ -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- type js load -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- aos css load -->
@@ -18,7 +16,7 @@
 </head>
 <body>
     <!-- Color Changer -->
-     <button id="toggleBtn" class="fixed top-[45%] left-0 z-2000 w-10 text-theme bg-black text-2xl right-2 rounded-r-lg cursor-pointer">
+     <button id="toggleBtn" class="fixed top-[45%] left-0 z-2000 w-10 text-theme bg-black text-2xl z-10 right-2 rounded-r-lg cursor-pointer">
                 <i class="fa-solid fa-gear py-2 px-1.5"></i>
             </button>
     <div id="slideContent" class="fixed hidden slide-in top-1/2 left-0 z-1500">
@@ -45,7 +43,7 @@
     </div>
     <!-- Header -->
     <header>
-        <div class="bg-dark fixed top-0 w-full z-100 border-b-2 border-theme">
+        <div class="bg-dark-tranparent fixed top-0 w-full z-100">
             <div class="py-4">
                 <div class="container">
                         <div class="header-menu flex justify-between items-center block">
@@ -83,86 +81,52 @@
         </div>
     </header>
     <!-- Hero Section -->
-     <section id="hero" class="hero relative top-15 min-h-screen md:h-screen">
+     <section id="hero" class="hero relative top-15 h-screen">
         <div class="bg-dark">
-            <div class="md:py-25 py-10">
+            <div class="md:py-25 py-10 ">
                 <div class="container">
                     <div class="flex items-center md:flex-row flex-col justify-center ">
-                        <div class="hero_left md:w-1/2 flex md:justify-start justify-center mb-10" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300 ">
-                            <div class="img-box flex justify-center md:justify-start">
-                                <div class="img-item border-[3px] border-theme rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] p-2.5 md:w-[80%] w-[40%] z-13">
-                                    <img class="bg-[#FF0099] bg-[linear-gradient(45deg,#3023AE_0%,#FF0099_100%)] rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] w-[100%]" src="assets/images/about-image.png" alt="hero-img">
-                                </div>
-                            </div>
-                            <!-- <div class="hero_img md:max-w-[25rem] max-w-[15rem] md:max-h-[25rem] max-h-[15rem] overflow-hidden  rounded-[50%] h-full w-full border-8 border-theme shadow-2xl shadow-theme">
+                        <div class="hero_left md:w-1/2 flex md:justify-start justify-center mb-10" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                            <div class="hero_img md:max-w-[25rem] max-w-[15rem] md:max-h-[25rem] max-h-[15rem] overflow-hidden  rounded-[50%] h-full w-full border-8 border-theme shadow-2xl shadow-theme">
                                 <img class="" src="assets/images/about_img.png" alt="Shahriar">
-                            </div> -->
+                            </div>
                         </div>
-                        <div class="hero_right md:w-1/2 text-white z-13" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300">
-                            <h1 class="md:text-7xl text-4xl text-white font-jost font-bold capitalize md:text-start text-center">
+                        <div class="hero_right md:w-1/2 text-white" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300">
+                            <h1 class="md:text-7xl text-5xl text-white font-jost font-bold capitalize md:text-start text-center">
                                 hello, this is
                             </h1>
-                            <h3 class="md:text-6xl text-3xl text-white font-jost font-bold capitalize py-7 md:text-start text-center">
+                            <h3 class="md:text-6xl text-4xl text-white font-jost font-bold capitalize py-7 md:text-start text-center">
                                 Md. Shahriar
                             </h3>
                             <div>
-                                <h4 class="md:text-4xl text-2xl text-white font-jost font-bold pb-8 flex md:justify-start justify-center md:flex-row flex-col items-center gap-2">
+                                <h4 class="md:text-4xl text-3xl text-white font-jost font-bold pb-8 flex md:justify-start justify-center md:flex-row flex-col items-center gap-2">
                                     <span>And i'm a</span> <span class="typing text-theme"></span>
                                     
                                 </h4>
                             </div>
-                            <div class="flex md:flex-row flex-col md:justify-start justify-center items-center gap-5 pb-10 md:pb-0">
-                                <div>
-                                    <a href="#form" class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-jost font-normal  tracking-wide text-white bg-gray-500 rounded-full group">
-                                        <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-theme rounded-full group-hover:w-56 group-hover:h-56"></span>
-                                        <span class="relative">Hire me</span>
-                                    </a>
-                                </div>
-                                <div class="social-box">
-                                    <a href="#" style="--accent-color: black;" data-social="Twitter">
-                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
-                                    </a>
-                                    <a href="https://www.youtube.com/channel/UC07K9ezajTltPxDHXFIu0vw" target="_blank" style="--accent-color: red;" data-social="Youtube">
-                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                                    </a>
-                                    <a href="https://www.instagram.com/sizer006/" target="_blank" style="--accent-color: #fe107c;" data-social="Instagram">
-                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
-                                    </a>
-                                    <a href="https://www.facebook.com/md.shahriar.sizer.98/" target="_blank"  style="--accent-color: #106bff;" data-social="Facebook">
-                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/md-shahriar-dev/" target="_blank" style="--accent-color: #0077b5;" data-social="Linkedin">
-                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 50 50"><title>Linkedin</title>
-                                            <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
-                                        </svg>
-                                    </a>
-                                </div>
+                            <div class="flex md:justify-start justify-center">
+                                <a href="#form" class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-jost font-normal  tracking-wide text-white bg-gray-500 rounded-full group">
+                                    <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-theme rounded-full group-hover:w-56 group-hover:h-56"></span>
+                                    <span class="relative">Hire me</span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> 
-         <!-- ================ Hero Background Anmation ================ -->
-        <div class="hero-bg">
-            <div class="wrapper">
-                <div id="stars"></div>
-                <div id="stars2"></div>
-                <div id="stars3"></div>
-            </div>
-        </div>   
+        </div>    
      </section>
     <!-- About Us Section -->
-     <section id="about" class="relative ">
+     <section id="about">
         <div class="bg-dark">
-            <div class="py-12.5 my-10">
+            <div class="py-25 mt-20">
                 <div class="container">
-                    <div class="section-title-wrapper">
-                        <h2 class="section_title"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">About Me <span></span></h2>
-                    </div>
-                    <div class="flex items-center md:flex-row flex-col justify-between">
+                    <h2 class="text-center md:pb-20 pb-10" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                        About Me
+                    </h2>
+                    <div class="flex items-center md:flex-row flex-col">
                         <div class="about-left md:w-1/2 flex justify-center" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
-                            <div class="about_img max-w-[12.5rem] md:max-w-[15rem] max-h-[12.5rem] md:max-h-[15rem] rounded-[50%] border-4 border-theme overflow-hidden shadow-2xl shadow-theme mb-5">
+                            <div class="about_img max-w-[12.5rem] max-h-[12.5rem] rounded-[50%] border-4 border-theme overflow-hidden shadow-2xl shadow-theme mb-5">
                                 <img class="" src="assets/images/about_img.png" alt="Shahriar">
                             </div>
                         </div>
@@ -206,26 +170,15 @@
                 </div>
             </div>
         </div>
-        <!-- ================ About Background Anmation ================ -->
-        <div class="about-animate-box">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
      </section>
     <!-- Skills Section -->
     <section id="skills">
         <div class="bg-dark">
-            <div class="py-12.5">
-                <div class="container">>
-                    <div class="section-title-wrapper">
-                        <h2 class="section_title">MySkills <span></span></h2>
-                    </div>
+            <div class="py-25">
+                <div class="container">
+                    <h2 class="text-center pb-20" >
+                        <span class="text-white pr-4">My</span>Skills
+                    </h2>
                     <div class="flex items-center flex-wrap md:flex-row flex-col gap-y-10">
                         <div class="md:w-1/2 md:pr-5 md:border-r-2 md:border-theme w-full">
                             <div class="flex flex-col w-full gap-y-10">
@@ -302,11 +255,11 @@
     <!-- Services Section -->
     <section id="services">
         <div class="bg-dark">
-            <div class="py-12.5">
+            <div class="py-25">
                 <div class="container">
-                    <div class="section-title-wrapper">
-                        <h2 class="section_title"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">My Services <span></span></h2>
-                    </div>
+                    <h2 class="uppercase text-center pb-20" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                        My Services
+                    </h2>
                     <div class="flex items-center gap-y-15 flex-wrap md:flex-row flex-col">
                         <!-- web design -->
                         <div class="md:w-1/2 md:pr-5" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
@@ -467,223 +420,14 @@
             </div>
         </div>
     </section>
-     <!-- ================ Plan Section ================ -->
-    <section class="plan py-12.5 bg-dark">
-        <div class="section-title-wrapper">
-            <h2 class="section_title">Chose Your Plan <span></span></h2>
-        </div>
-        <div class="container">
-           <div class="plan-cards">
-                 <div class="plan-card">
-                    <div class="plan-name bg-theme text-white py-5 text-center w-full z-10 rounded-[20px_20px_0_0]">
-                        <h2>Basic</h2>
-                    </div>
-                    <span class="plan-price-text">$100</span>
-                    <span class="price-plan-title">Responsive 1 Page Design</span>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>WordPress and WooCommerce Installation </span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-regular fa-clock"></i>
-                        <span>4-Day Delivery</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-arrows-rotate"></i>
-                        <span>Unlimited Revisions</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Functional website</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>1 Page</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Responsive Design</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Content Upload</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>4 Plugin/Extention</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>E-commerce Functionality</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-xmark"></i>
-                        <span>Payment Integration</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-xmark"></i>
-                        <span>Contact Form</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-xmark"></i>
-                        <span>Speed Optimization</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Social media icons</span>
-                    </div>
-                    <div class="">
-                        <a href="#form">
-                            <button class="btn ">
-                                Order Now
-                            </button>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="plan-card">
-                    <div class="plan-name bg-theme text-white py-5 text-center w-full z-10 rounded-[20px_20px_0_0]">
-                        <h2>Standard</h2>
-                    </div>
-                    <span class="plan-price-text">$290</span>
-                    <span class="price-plan-title">Responsive 5 Page Design</span>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Complete Ecommerce or WooCommerce Website</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-regular fa-clock"></i>
-                        <span>6-Day Delivery</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-arrows-rotate"></i>
-                        <span>Unlimited Revisions</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Functional website</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>1 Page</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Responsive Design</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Content Upload</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>4 Plugin/Extention</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>E-commerce Functionality</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Payment Integration</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Contact Form</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-xmark"></i>
-                        <span>Speed Optimization</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Social media icons</span>
-                    </div>
-                    <div class="">
-                        <a href="#form">
-                            <button class="btn ">
-                                Order Now
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="plan-card">
-                    <div class="plan-name bg-theme text-white py-5 text-center w-full z-10 rounded-[20px_20px_0_0]">
-                        <h2>Premium</h2>
-                    </div>
-                    <span class="plan-price-text">$590</span>
-                    <span class="price-plan-title">Responsive 8 Page Design</span>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Complete WooCommerce Website + SEO </span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-regular fa-clock"></i>
-                        <span>7-Day Delivery</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-arrows-rotate"></i>
-                        <span>Unlimited Revisions</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Functional website</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>1 Page</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Responsive Design</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Content Upload</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>4 Plugin/Extention</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>E-commerce Functionality</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Payment Integration</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Contact Form</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Speed Optimization</span>
-                    </div>
-                    <div class="price-plan-dtails">
-                        <i class="fa-solid fa-check"></i>
-                        <span>Social media icons</span>
-                    </div>
-                    <div class="">
-                        <a href="#form">
-                            <button class="btn ">
-                                Order Now
-                            </button>
-                        </a>
-                    </div>
-                </div>
-           </div>
-        </div>
-     </section>
     <!-- Portfolio Section -->
      
      <section id="portfolio">
-        <div class="py-12.5">
+        <div class="py-25">
             <div class="container">
-                <div class="section-title-wrapper">
-                    <h2 class="section_title"  data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="300">My Portfolio <span></span></h2>
-                </div>
+                <h2 class="uppercase text-center pb-20" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="300">
+                    <span class="text-white pr-4">My</span>Portfolio
+                </h2>
                 
                 <div class="tabs flex items-center flex-wrap justify-center gap-10 font-jost font-bold text-base text-white  pb-10">
                     <button class=" tab cursor-pointer active" data-category="all" href="">All</button>
@@ -696,14 +440,14 @@
                 <div class="grid md:grid-cols-3 grid-cols-1 justify-center gap-8 gap-y-12">
                     <!-- portfolio-1 -->
                     <div class="one_grid">
-                        <button id="" data-target="pp1" class="open relative card-p rounded-2xl overflow-hidden h-80 hover:border-1 border-theme cursor-pointer item design">
+                        <button id="" data-target="pp1" class="open relative card-p rounded-2xl overflow-hidden h-80 shadow-lg shadow-theme cursor-pointer item design">
                             <img class="h-full" src="assets/images/portfolio 1.png" alt="portfolio">
                             <div class="overlay">
                                 <div class="text"><a href="#">View</a></div>
                             </div>
                         </button>
                         <div id="pp1" class="pp1 popup  bg-[#21252985] fixed overflow-scroll invisible top-0 bottom-0 left-0 right-0 z-300">
-                            <div class="opacity-100 max-w-250 mx-auto bg-dark p-10 z-100 rounded-2xl transform  transition fade-in-out duration-initial  hover:border-1 border-theme mb-20 mt-2">
+                            <div class="opacity-100 max-w-250 mx-auto bg-dark p-10 z-100 rounded-2xl transform  transition fade-in-out duration-initial shadow-2xl shadow-theme mb-20 mt-2">
                             <!-- close btn -->
                                 <button href="#" id="" class="close absolute  top-4 right-4 text-2xl text-white hover:text-theme font-semibold cursor-pointer">
                                     <i class="fa-solid fa-xmark"></i>
@@ -738,14 +482,14 @@
                                     </div>
                                 </div>
                                 <div class="overflow-hidden w-full md:h-150 h-100 mt-10 rounded-2xl">
-                                    <img class="h-full border-1 border-theme" src="assets/images/portfolio 1.png" alt="">
+                                    <img class="h-full" src="assets/images/portfolio 1.png" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- portfolio-2 -->
                     <div class="">
-                        <button id="" data-target="ppp2" class="open relative card-p rounded-2xl overflow-hidden h-80 hover:border-1 border-theme cursor-pointer item development">
+                        <button id="" data-target="ppp2" class="open relative card-p rounded-2xl overflow-hidden h-80 shadow-lg shadow-theme cursor-pointer item development">
                             <img class="h-full" src="assets/images/portfolio-2.PNG" alt="portfolio">
                             <div class="overlay">
                                 <div class="text"><a href="#">View</a></div>
@@ -787,15 +531,15 @@
                                     </div>
                                 </div>
                                 <div class="overflow-hidden w-full md:h-150 h-100 mt-10 rounded-2xl">
-                                    <img class="h-full border-1 border-theme" src="assets/images/portfolio-2.png" alt="">
+                                    <img class="h-full" src="assets/images/portfolio-2.png" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- portfolio-3 -->
                     <div class="item development">
-                        <button id="" data-target="ppp3" class="open relative card-p rounded-2xl overflow-hidden h-80 hover:border-1 border-theme cursor-pointer">
-                            <img class="h-full" src="assets/images/portfolio-2.png" alt="portfolio">
+                        <button id="" data-target="ppp3" class="open relative card-p rounded-2xl overflow-hidden h-80 shadow-lg shadow-theme cursor-pointer">
+                            <img class="h-full" src="https://i.postimg.cc/jqcPKHMY/portfolio-3.png" alt="portfolio">
                             <div class="overlay">
                                 <div class="text"><a href="#">View</a></div>
                             </div>
@@ -831,19 +575,19 @@
                                     <div class="w-6/12 flex gap-4 items-center text-white font-jost font-medium text-xl">
                                         <i class="fa-solid fa-link"></i>
                                         <h4>
-                                            Preview : <a href="assets/images/portfolio-2.png" class="hover:text-theme">View Live Project</a>
+                                            Preview : <a href="https://i.postimg.cc/jqcPKHMY/portfolio-3.png" class="hover:text-theme">View Live Project</a>
                                         </h4>
                                     </div>
                                 </div>
                                 <div class="overflow-hidden w-full md:h-150 h-100 mt-10 rounded-2xl">
-                                    <img class="h-full border-1 border-theme" src="assets/images/portfolio4.PNG" alt="">
+                                    <img class="h-full" src="assets/images/portfolio4.PNG" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- portfolio-4 -->
                     <div class="item wordpress">
-                        <button id="" data-target="ppp4" class="open relative card-p rounded-2xl overflow-hidden h-80 hover:border-1 border-theme cursor-pointer">
+                        <button id="" data-target="ppp4" class="open relative card-p rounded-2xl overflow-hidden h-80 shadow-lg shadow-theme cursor-pointer">
                             <img class="h-full" src="assets/images/portfolio 1.png" alt="portfolio">
                             <div class="overlay">
                                 <div class="text"><a href="#">View</a></div>
@@ -885,15 +629,15 @@
                                     </div>
                                 </div>
                                 <div class="overflow-hidden w-full md:h-150 h-100 mt-10 rounded-2xl">
-                                    <img class="h-full border-1 border-theme" src="assets/images/portfolio 1.png" alt="">
+                                    <img class="h-full" src="assets/images/portfolio 1.png" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- portfolio-5 -->
                     <div class="item elementor">
-                    <button id="" data-target="ppp5" class="open relative card-p rounded-2xl overflow-hidden h-80 hover:border-1 border-theme cursor-pointer">
-                        <img class="h-full" src="assets/images/usapvaservice.PNG" alt="portfolio">
+                    <button id="" data-target="ppp5" class="open relative card-p rounded-2xl overflow-hidden h-80 shadow-lg shadow-theme cursor-pointer">
+                        <img class="h-full" src="assets/images/portfolio 1.png" alt="portfolio">
                         <div class="overlay">
                             <div class="text"><a href="#">View</a></div>
                         </div>
@@ -905,7 +649,7 @@
                                 <i class="fa-solid fa-xmark"></i>
                             </button>
                             <h2 class="text-center capitalize text-white font-jost font-semibold mb-10">
-                                UsaPvaService
+                                RRF Exjam
                             </h2>
                             <div class="flex justify-between items-center gap-y-10  flex-wrap">
                                 <div class="w-6/12 flex gap-4 items-center text-white font-jost font-medium text-xl">
@@ -917,32 +661,32 @@
                                 <div class="w-6/12 flex gap-4 items-center text-white font-jost font-medium text-xl">
                                     <i class="fa-solid fa-user"></i>
                                     <h4>
-                                        Client: <span class="font-semobild capitalize">this template was used for Client.</span>
+                                        Client: <span class="font-semobild">this template was used for practice only; I do not claim ownership.</span>
                                     </h4>
                                 </div>
                                 <div class="w-6/12 flex gap-4 items-center text-white font-jost font-medium text-xl">
                                     <i class="fa-solid fa-user"></i>
                                     <h4>
-                                        language: <span class="font-semibold">Wordpress with Elementor</span>
+                                        language: <span class="font-semibold">HTML, CSS, TAILWIND, JS.</span>
                                     </h4>
                                 </div>
                                 <div class="w-6/12 flex gap-4 items-center text-white font-jost font-medium text-xl">
                                     <i class="fa-solid fa-link"></i>
                                     <h4>
-                                        Preview : <a href="https://usapvaservice.com/" target="_blank" class="hover:text-theme">View Live Project</a>
+                                        Preview : <a href="" class="hover:text-theme">View Live Project</a>
                                     </h4>
                                 </div>
                             </div>
                             <div class="overflow-hidden w-full md:h-150 h-100 mt-10 rounded-2xl">
-                                <img class="h-full border-1 border-theme" src="assets/images/usapvaservice.PNG" alt="">
+                                <img class="h-full" src="assets/images/portfolio 1.png" alt="">
                             </div>
                         </div>
                     </div>
                     </div>
                     <!-- portfolio-6 -->
                     <div class="item design">
-                        <button id="" data-target="ppp6" class="open relative card-p rounded-2xl overflow-hidden h-80 hover:border-1 border-theme cursor-pointer">
-                            <img class="h-full" src="assets/images/zaarin-portfolio.PNG" alt="portfolio">
+                        <button id="" data-target="ppp6" class="open relative card-p rounded-2xl overflow-hidden h-80 shadow-lg shadow-theme cursor-pointer">
+                            <img class="h-full" src="assets/images/portfolio 1.png" alt="portfolio">
                             <div class="overlay">
                                 <div class="text"><a href="#">View</a></div>
                             </div>
@@ -954,7 +698,7 @@
                                     <i class="fa-solid fa-xmark"></i>
                                 </button>
                                 <h2 class="text-center capitalize text-white font-jost font-semibold mb-10">
-                                    Zarrin
+                                    RRF Exjam
                                 </h2>
                                 <div class="flex justify-between items-center gap-y-10  flex-wrap">
                                     <div class="w-6/12 flex gap-4 items-center text-white font-jost font-medium text-xl">
@@ -978,110 +722,12 @@
                                     <div class="w-6/12 flex gap-4 items-center text-white font-jost font-medium text-xl">
                                         <i class="fa-solid fa-link"></i>
                                         <h4>
-                                            Preview : <a href="https://sfsizer.github.io/rrf-exam/zarrin/" target="_blank"  class="hover:text-theme">View Live Project</a>
+                                            Preview : <a href="" class="hover:text-theme">View Live Project</a>
                                         </h4>
                                     </div>
                                 </div>
                                 <div class="overflow-hidden w-full md:h-150 h-100 mt-10 rounded-2xl">
-                                    <img class="h-full border-1 border-theme" src="assets/images/zaarin-portfolio.PNG" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio-7 -->
-                    <div class="item design">
-                        <button id="" data-target="ppp7" class="open relative card-p rounded-2xl overflow-hidden h-80 hover:border-1 border-theme cursor-pointer">
-                            <img class="h-full" src="assets/images/First-portfolio.PNG" alt="portfolio">
-                            <div class="overlay">
-                                <div class="text"><a href="#">View</a></div>
-                            </div>
-                        </button>
-                        <div id="ppp7" class="pp1 popup bg-[#21252985] fixed overflow-scroll invisible top-0 bottom-0 left-0 right-0 z-300">
-                            <div class="opacity-100 max-w-250 mx-auto bg-dark p-10 z-100 rounded-2xl transform  transition fade-in-out duration-initial shadow-2xl shadow-theme mb-20 mt-2">
-                            <!-- close btn -->
-                                <button href="#" id="" class="close absolute  top-4 right-4 text-2xl text-white hover:text-theme font-semibold cursor-pointer">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </button>
-                                <h2 class="text-center capitalize text-white font-jost font-semibold mb-10">
-                                    Old Portfolio
-                                </h2>
-                                <div class="flex justify-between items-center gap-y-10  flex-wrap">
-                                    <div class="w-6/12 flex gap-4 items-center text-white font-jost font-medium text-xl">
-                                        <i class="fa-solid fa-file"></i>
-                                        <h4>
-                                            Project: <span class="font-semibold">Website</span>
-                                        </h4>
-                                    </div>
-                                    <div class="w-6/12 flex gap-4 items-center text-white font-jost font-medium text-xl">
-                                        <i class="fa-solid fa-user"></i>
-                                        <h4>
-                                            Client: <span class="font-semobild">Own</span>
-                                        </h4>
-                                    </div>
-                                    <div class="w-6/12 flex gap-4 items-center text-white font-jost font-medium text-xl">
-                                        <i class="fa-solid fa-user"></i>
-                                        <h4>
-                                            language: <span class="font-semibold">HTML, CSS, JS.</span>
-                                        </h4>
-                                    </div>
-                                    <div class="w-6/12 flex gap-4 items-center text-white font-jost font-medium text-xl">
-                                        <i class="fa-solid fa-link"></i>
-                                        <h4>
-                                            Preview : <a href="https://sfsizer.github.io/rrf-exam/portfolio-template/" target="_blank"  class="hover:text-theme">View Live Project</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div class="overflow-hidden w-full md:h-150 h-100 mt-10 rounded-2xl">
-                                    <img class="h-full border-1 border-theme" src="assets/images/First-portfolio.PNG" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio-8 -->
-                    <div class="item design">
-                        <button id="" data-target="ppp8" class="open relative card-p rounded-2xl overflow-hidden h-80 hover:border-1 border-theme cursor-pointer">
-                            <img class="h-full" src="assets/images/project-3.PNG" alt="portfolio">
-                            <div class="overlay">
-                                <div class="text"><a href="#">View</a></div>
-                            </div>
-                        </button>
-                        <div id="ppp8" class="pp1 popup bg-[#21252985] fixed overflow-scroll invisible top-0 bottom-0 left-0 right-0 z-300">
-                            <div class="opacity-100 max-w-250 mx-auto bg-dark p-10 z-100 rounded-2xl transform  transition fade-in-out duration-initial shadow-2xl shadow-theme mb-20 mt-2">
-                            <!-- close btn -->
-                                <button href="#" id="" class="close absolute  top-4 right-4 text-2xl text-white hover:text-theme font-semibold cursor-pointer">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </button>
-                                <h2 class="text-center capitalize text-white font-jost font-semibold mb-10">
-                                    Old Portfolio
-                                </h2>
-                                <div class="flex justify-between items-center gap-y-10  flex-wrap">
-                                    <div class="w-6/12 flex gap-4 items-center text-white font-jost font-medium text-xl">
-                                        <i class="fa-solid fa-file"></i>
-                                        <h4>
-                                            Project: <span class="font-semibold">Website</span>
-                                        </h4>
-                                    </div>
-                                    <div class="w-6/12 flex gap-4 items-center text-white font-jost font-medium text-xl">
-                                        <i class="fa-solid fa-user"></i>
-                                        <h4>
-                                            Client: <span class="font-semobild">Own</span>
-                                        </h4>
-                                    </div>
-                                    <div class="w-6/12 flex gap-4 items-center text-white font-jost font-medium text-xl">
-                                        <i class="fa-solid fa-user"></i>
-                                        <h4>
-                                            language: <span class="font-semibold">HTML, CSS, JS.</span>
-                                        </h4>
-                                    </div>
-                                    <div class="w-6/12 flex gap-4 items-center text-white font-jost font-medium text-xl">
-                                        <i class="fa-solid fa-link"></i>
-                                        <h4>
-                                            Preview : <a href="https://sfsizer.github.io/rrf-exam/project-3/" target="_blank"  class="hover:text-theme">View Live Project</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div class="overflow-hidden w-full md:h-150 h-100 mt-10 rounded-2xl">
-                                    <img class="h-full border-1 border-theme" src="assets/images/project-3.PNG" alt="">
+                                    <img class="h-full" src="assets/images/portfolio 1.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -1093,11 +739,11 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="bg-dark">
-            <div class="pt-12.5 pb-20">
+            <div class="pt-25 pb-20">
                 <div class="container">
-                    <div class="section-title-wrapper">
-                        <h2 class="section_title"  data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">Contact Me <span></span></h2>
-                    </div>
+                    <h2 class="uppercase text-center pb-20" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+                        Contact<span class="text-dark pl-4">Me</span>
+                    </h2>
                     <div class="bg-transparent border border-dark-border shadow-xl shadow-dark-border rounded-3xl">
                         <div class="p-10">
                             <div class="flex md:flex-row flex-col ">
@@ -1115,7 +761,7 @@
                                         <div class="flex flex-col gap-y-2 font-jost">
                                             <span class="text-base font-bold text-theme">Mail Me</span>
                                             <span class="text-white text-[15px] font-normal cursor-pointer">
-                                                <a href="mailto:md.shariar1999@gmail" class="hover:text-theme"  >
+                                                <a href="mailto:md.shariar1999@gmail">
                                                     md.shariar1999@gmail.com
                                                 </a>
                                             </span>
@@ -1128,37 +774,27 @@
                                         <div class="flex flex-col gap-y-2 font-jost">
                                             <span class="text-base font-bold text-theme">Call Me</span>
                                             <span class="text-white text-[15px] font-normal cursor-pointer">
-                                                <a href="tel:+8801747280993" class="hover:text-theme">
+                                                <a href="tel:+8801747280993">
                                                     +8801747280993
                                                 </a>
                                             </span>
                                         </div>
                                     </div>
-                                    <div class="flex items-center justify-center gap-6 social-icon">
+                                    <div class="flex items-center justify-center gap-6">
                                         <span class="text-3xl text-theme cursor-pointer">
-                                            <a href="https://www.facebook.com/md.shahriar.sizer.98/" target="_blank">
-                                                <i class="fa-brands fa-facebook"></i>
-                                            </a>
+                                            <i class="fa-brands fa-facebook"></i>
                                         </span>
                                         <span class="text-3xl text-theme cursor-pointer">
-                                            <a href="https://twitter.com/" target="_blank">
-                                                <i class="fa-brands fa-twitter"></i>
-                                            </a>
+                                            <i class="fa-brands fa-twitter"></i>
                                         </span>
                                         <span class="text-3xl text-theme cursor-pointer">
-                                            <a href="https://www.linkedin.com/in/md-shahriar-dev/" target="_blank">
-                                                <i class="fa-brands fa-linkedin"></i>
-                                            </a>
+                                            <i class="fa-brands fa-linkedin"></i>
                                         </span>
                                         <span class="text-3xl text-theme cursor-pointer">
-                                            <a href="https://github.com/md-shahriar" target="_blank">
-                                                <i class="fa-brands fa-github"></i>
-                                            </a>
+                                            <i class="fa-brands fa-github"></i>
                                         </span>
                                         <span class="text-3xl text-theme cursor-pointer">
-                                            <a href="https://www.youtube.com/" target="_blank">
-                                                <i class="fa-brands fa-youtube"></i>
-                                            </a>
+                                            <i class="fa-brands fa-youtube"></i>
                                         </span>
                                     </div>
                                 </div>
@@ -1212,5 +848,6 @@
     <script>
           AOS.init();
     </script>
+    
 </body>
 </html>
