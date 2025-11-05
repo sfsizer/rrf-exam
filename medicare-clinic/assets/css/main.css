@@ -1,0 +1,58 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+/* ============== Resposive Menu ============== */
+.menu ul li a{
+  font-family: 'Poppins', sans-serif;
+}
+.menu-icon {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+  transform: scale(1, 1);
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    background-color: var(--color-white);
+    align-items: start;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 1;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .menu ul li a {
+    color: #000000;
+    padding: 10px 0;
+  }
+
+
+  .menu-icon {
+    display: block;
+    color: var(--color-black);
+    font-size: 28px;
+    cursor: pointer;
+  }
+  .pd-rs{
+    margin-top: 80px;
+  }
+  
+}
+
+.hero{
+  background: linear-gradient(to right, #E0F2FE, #F0F9FF);
+}
