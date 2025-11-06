@@ -18,25 +18,24 @@
         <div class="pink-bg ">
            
             <div class="container relative">
-                <img class="absolute top-0 left-[27%] z-0" src="assets/images/Background-1.png" alt="bg-image">
+                <img class="absolute top-0 left-[27%] md:z-0 z-100" src="assets/images/Background-1.png" alt="bg-image">
                 <div class="py-5">
-                    <div class="flex items-center justify-between">
-                        <div>
+                    <input type="checkbox" id="menu-toggle">
+                        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                    <div class="flex md:flex-row flex-col justify-center items-center md:justify-between menu gap-y-2.5">
+                        <div >
                             <img src="assets/images/Logo.png" alt="logo">
                         </div>
-                        <input type="checkbox" id="menu-toggle">
-                        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-                        <div>
-                            <div class="nav-menu relative z-10 menu">
-                                <ul>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#service">Service</a></li>
-                                    <li><a href="#portfolio">Portfolio</a></li>
-                                    <li><a href="#blog">Blog</a></li>
-                                </ul>
-                            </div>
+                        
+                        <div class="nav-menu relative z-10 gap-y-2.5">
+                            <ul>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#service">Service</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                            </ul>
                         </div>
-                        <div>
+                        <div class="pt-2.5">
                             <button class="py-2 px-4 medium-bold border border-[#1F1F1F] text-[#1F1F1F] hover:bg-[#1F1F1F] hover:text-white cursor-pointer"><a href="">Let's Talk</a></button>
                         </div>
                     </div>
@@ -51,7 +50,7 @@
             <div class="container">
                 <div class="md:pt-10">
                     <div class="flex md:flex-row flex-col gap-6">
-                        <div class="w-5/12">
+                        <div class="md:w-5/12 w-full md:px-0 px-5">
                             <div class="py-12">
                                 <h4 class="xlarge-regular">UX Designer</h4>
                                 <h1 class="heading-2 my-4">Hi There, I’m <br>
@@ -63,7 +62,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-7/12">
+                        <div class="md:w-7/12 w-10/12">
                             <div class="flex justify-center after">
                                 <img src="assets/images/hero-man.png" alt="hero-img">
                             </div>
