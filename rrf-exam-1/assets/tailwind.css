@@ -365,9 +365,6 @@
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
-  .mt-7 {
-    margin-top: calc(var(--spacing) * 7);
-  }
   .mt-7\.5 {
     margin-top: calc(var(--spacing) * 7.5);
   }
@@ -467,9 +464,6 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
   .h-1\.25 {
     height: calc(var(--spacing) * 1.25);
   }
@@ -485,26 +479,8 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
-  }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
-  }
-  .w-5\/12 {
-    width: calc(5/12 * 100%);
-  }
-  .w-7 {
-    width: calc(var(--spacing) * 7);
-  }
-  .w-7\/12 {
-    width: calc(7/12 * 100%);
-  }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
   }
   .w-10\/12 {
     width: calc(10/12 * 100%);
@@ -1341,9 +1317,6 @@
   .object-top {
     object-position: top;
   }
-  .p-1 {
-    padding: calc(var(--spacing) * 1);
-  }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
   }
@@ -1413,9 +1386,6 @@
   .pt-13 {
     padding-top: calc(var(--spacing) * 13);
   }
-  .pr-2 {
-    padding-right: calc(var(--spacing) * 2);
-  }
   .pr-2\.5 {
     padding-right: calc(var(--spacing) * 2.5);
   }
@@ -1461,9 +1431,6 @@
   .pb-25 {
     padding-bottom: calc(var(--spacing) * 25);
   }
-  .pl-2 {
-    padding-left: calc(var(--spacing) * 2);
-  }
   .pl-2\.5 {
     padding-left: calc(var(--spacing) * 2.5);
   }
@@ -1472,9 +1439,6 @@
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
-  }
-  .pl-10 {
-    padding-left: calc(var(--spacing) * 10);
   }
   .text-center {
     text-align: center;
@@ -2169,11 +2133,6 @@
       padding-bottom: calc(var(--spacing) * 20.5);
     }
   }
-  .md\:pl-0 {
-    @media (width >= 48rem) {
-      padding-left: calc(var(--spacing) * 0);
-    }
-  }
   .md\:text-start {
     @media (width >= 48rem) {
       text-align: start;
@@ -2188,7 +2147,6 @@
 .container {
   margin-inline: auto;
   max-width: 1192px;
-  padding-inline: calc(var(--spacing) * 4);
 }
 @property --tw-translate-x {
   syntax: "*";

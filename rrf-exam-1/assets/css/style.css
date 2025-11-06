@@ -35,7 +35,9 @@
     transition: transform 0.3s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
-
+  .right-arrow svg, .slick-arrow svg{
+    display: none;
+  }
   .menu ul li a {
     color: #000000;
     padding: 10px 0;
