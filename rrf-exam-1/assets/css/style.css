@@ -7,6 +7,54 @@
     --color-grey: #F7F7F7;
 
 }
+.menu-icon {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+  transform: scale(1, 1);
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    background-color: var(--color-white);
+    align-items: start;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 100;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .menu ul li a {
+    color: #000000;
+    padding: 10px 0;
+  }
+  .menu ul{
+    flex-direction: column;
+  }
+
+  .menu-icon {
+    display: block;
+    color: var(--color-black);
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .pd-rs{
+    margin-top: 80px;
+  }
+  
+}
 
 .red{
     color: var(--color-red);
