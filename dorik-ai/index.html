@@ -9,27 +9,31 @@
 </head>
 <body>
 <!-- Header Start -->
-    <div class="bg-[#fff9f3] border-b border-[#080a471a]">
+    <div class="bg-[#fff9f3] border-b border-[#080a471a] fixed z-100 w-full">
         <div class="container">
-            <div class="mx-17.5">
-                <div class="flex justify-between items-center pt-5 pb-[5px]">
-                    <div class="">
+            <div class="lg:mx-17.5 md:mx-12.5 mx-5">
+                <div class="flex  items-center pt-5 pb-[5px]">
+                    <div class=" w-1/3">
                         <img class="w-[82px]" src="assets/images/logo-dark_jta933n2.svg" alt="logo">
                     </div>
-                    <div class="nav-menu">
-                        <ul class="flex gap-5">
-                            <li><a href="#" class="text-[16px] text-[#17134a] font-medium hover:text-[#3a30ba]">✨ Dorik AI</a></li>
-                            <li><a href="#" class="text-[16px] text-[#17134a] font-medium hover:text-[#3a30ba]">Product</a></li>
-                            <li><a href="#" class="text-[16px] text-[#17134a] font-medium hover:text-[#3a30ba]">Templates</a></li>
-                            <li><a href="#" class="text-[16px] text-[#17134a] font-medium hover:text-[#3a30ba]">Pricing</a></li>
-                            <li><a href="#" class="text-[16px] text-[#17134a] font-medium hover:text-[#3a30ba]">Resources</a></li>
-                        </ul>
-                        
-                    </div>
-                    <div class="">
-                        <div class="flex">
-                            <button class="text-sm font-medium text-[#3a30ba] leading-[21px]  cursor-pointer mr-4">Login</button>
-                            <button class="text-sm font-medium text-[#3a30ba] leading-[21px] py-2 px-4 cursor-pointer border border-[#3a30ba] rounded-[5px]">Sign Up</button>
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                    <div class="flex justify-between items-center w-2/3 menu ">
+                        <div class="nav-menu">
+                            <ul class="flex md:flex-row flex-col gap-5 gap-y-5">
+                                <li><a href="#" class="text-[16px] text-[#17134a] font-medium hover:text-[#3a30ba]">✨ Dorik AI</a></li>
+                                <li><a href="#" class="text-[16px] text-[#17134a] font-medium hover:text-[#3a30ba]">Product</a></li>
+                                <li><a href="#" class="text-[16px] text-[#17134a] font-medium hover:text-[#3a30ba]">Templates</a></li>
+                                <li><a href="#" class="text-[16px] text-[#17134a] font-medium hover:text-[#3a30ba]">Pricing</a></li>
+                                <li><a href="#" class="text-[16px] text-[#17134a] font-medium hover:text-[#3a30ba]">Resources</a></li>
+                            </ul>
+                            
+                        </div>
+                        <div class="">
+                            <div class="flex md:flex-row flex-col gap-y-5">
+                                <button class="text-sm font-medium text-[#3a30ba] leading-[21px]  cursor-pointer mr-4">Login</button>
+                                <button class="text-sm font-medium text-[#3a30ba] leading-[21px] py-2 px-4 cursor-pointer border border-[#3a30ba] rounded-[5px]">Sign Up</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -38,19 +42,19 @@
     </div>
 <!-- Header End -->
 <!-- Hero Section Start -->
-    <div class="bg-[#FFF9F3] pb-[230px] relative">
+    <div class="bg-[#FFF9F3] lg:pb-[230px] md:pb-[100px] pb-[50px]  relative">
         <div class="container text-center">
             <div class="pt-[50px]">
-                <h1 class="font-bold text-[71px] leading-[71px] mt-7.5 text-[#17134a]">
+                <h1 class="font-bold lg:text-[71px] md:text-5xl text-4xl leading-[71px] mt-7.5 text-[#17134a]">
                     Build Websites with <br>
                     the Power of AI
                 </h1>
-                <p class="mt-6.5 text-[22px] text-[#45426e] font-normal leading-[33px]">
+                <p class="mt-6.5 md:text-[22px] text-base text-[#45426e] font-normal leading-[33px]">
                     It takes minutes to finish a website with Dorik, it's simple, intuitive <br>
                     and can be easily learned by beginners
                 </p>
-                <div class="mx-[116px] my-[25px]">
-                    <ul class="flex items-center">
+                <div class="lg:mx-[116px] md:mx-12.5 mx-5 my-[25px]">
+                    <ul class="flex md:flex-nowrap flex-wrap items-center gap-y-5">
                         <li class="flex items-center mr-5 text-[#45426e]">
                             <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="circle-check" width="20"  class="svg-inline--fa fa-circle-check fa-fw icon icon_3hb7j7ze text-[#3a30ba] mr-[5px]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-testid="icon-test">
                                 <path fill="currentColor" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z">
@@ -110,7 +114,7 @@
                 </div>
             </div>
             <div class="pt-12">
-                <div class="flex justify-center items-center gap-10">
+                <div class="flex justify-center items-center gap-10 gap-y-5 flex-wrap md:flex-nowrap">
                     <div>
                         <p class="text-base font-normal leading-6 text-[#45426e]">
                             Featured on:
@@ -139,10 +143,10 @@
                 </div>
             </div>
             <div class=" bg-1 relative">
-                <div class=" bg-[#ffffff99] rounded-[26px] h-[470px] w-[957px] mx-auto px-5 pt-5 pb-[14px]">
+                <div class=" bg-[#ffffff99] rounded-[26px] h-[470px] lg:w-[957px] w-full  mx-auto px-5 pt-5 pb-[14px]">
                         <img class="h-[436px] w-[957px] mx-auto rounded-[20px]" src="https://cdn.cmsfly.com/635bcad9b8a74e0091632998/images/41829376516705076200196503870756626797345056n-0OU1W.jpeg" alt="">
                 </div>
-                <button class="absolute  py-5 px-[30px] rounded-[10px] bg-[#8C3BFC] top-[210px] left-[578px]">
+                <button class="absolute  py-5 px-[30px] rounded-[10px] bg-[#8C3BFC] top-[210px] left-[45%]">
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play" height="30" width="30" class="svg-inline--fa fa-play fa-fw icon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-testid="icon-test"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path></svg>
                 </button>
             </div>
@@ -151,10 +155,10 @@
 <!-- Hero Section End -->
     <div class="bg-white">
         <div class="container mx-auto ">
-            <div class="mx-[70px]">
+            <div class="lg:mx-[70px] md:mx-12.5 mx-5">
                 <div class="absolute mt-[-115px]">
-                    <div class="flex items-center justify-center border-b border-[#080a471a] mb-[55px]">
-                        <div class=" py-[15px] px-5 bg-white ">
+                    <div class="flex flex-wrap items-center justify-center border-b border-[#080a471a] mb-[55px]">
+                        <div class=" py-[15px] px-5 bg-white">
                             <div class="flex flex-col justify-center items-center">
                                 <img class="w-15 h-15 rounded-full" src="https://cdn.cmsfly.com/635bcad9b8a74e0091632998/rsz_1screenshot_2022-07-20_at_21046_am_1775qlqn-fssiwV.webp" alt="">
                                 <p class="py-2.5 text-[18px] font-normal leading-[27px] text-[#45426e
